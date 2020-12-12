@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="uso__cola__max_8cpp" kind="file" language="C++">
+    <compoundname>uso_cola_max.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="cola__max_8h" local="yes">cola_max.h</includes>
+    <incdepgraph>
+      <node id="25">
+        <label>elemento.h</label>
+        <link refid="elemento_8h"/>
+      </node>
+      <node id="21">
+        <label>src/uso_cola_max.cpp</label>
+        <link refid="uso_cola_max.cpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>cola_max.h</label>
+        <link refid="cola__max_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stack</label>
+      </node>
+      <node id="22">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="uso__cola__max_8cpp_1ab777891f7cce55c9b1b8af238079b62f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;o, const elemento &amp;e)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structelemento" kindref="compound">elemento</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>sobrecarga del operador de salida &lt;&lt; </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ostream donde almacenaremos los caracteres </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>elemento donde consultar valores </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/uso_cola_max.cpp" line="16" column="1" bodyfile="src/uso_cola_max.cpp" bodystart="16" bodyend="20"/>
+        <references refid="classcola__max_1aea76788834703f74d5f70e3e1af92965" compoundref="cola__max_8cpp" startline="14" endline="20">cola_max::back</references>
+        <references refid="classcola__max_1afbe1d4a6aa1d2f5c8916a449e75aea47" compoundref="cola__max_8cpp" startline="40" endline="50">cola_max::poner</references>
+        <references refid="classcola__max_1a08669c970f917d3a711f3faf2709ca8d" compoundref="cola__max_8cpp" startline="22" endline="38">cola_max::quitar</references>
+        <references refid="classcola__max_1afcd482b45baa3a34584d1832b481d52e" compoundref="cola__max_8cpp" startline="53" endline="56">cola_max::vacia</references>
+      </memberdef>
+      <memberdef kind="function" id="uso__cola__max_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/uso_cola_max.cpp" line="23" column="1" bodyfile="src/uso_cola_max.cpp" bodystart="23" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>fichero que hace uso del TDA <ref refid="classcola__max" kindref="compound">cola_max</ref>. crea una cola, le inserta 10 elementos, los saca e imprime por pantalla. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cola__max_8h" kindref="compound">cola_max.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="uso__cola__max_8cpp_1ab777891f7cce55c9b1b8af238079b62f" refkind="member"><highlight class="normal">ostream&amp;<sp/><ref refid="uso__cola__max_8cpp_1ab777891f7cce55c9b1b8af238079b62f" kindref="member">operator&lt;&lt;</ref>(ostream<sp/>&amp;o,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structelemento" kindref="compound">elemento</ref><sp/>&amp;e){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>o<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;elemento:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.ele<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>maximo<sp/>de<sp/>la<sp/>pila:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.max_ele<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>o;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcola__max" kindref="compound">cola_max</ref><sp/>c;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>i=10;<sp/>i&gt;=0<sp/>;<sp/>i--)<sp/>c.<ref refid="classcola__max_1afbe1d4a6aa1d2f5c8916a449e75aea47" kindref="member">poner</ref>(i);<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!c.<ref refid="classcola__max_1afcd482b45baa3a34584d1832b481d52e" kindref="member">vacia</ref>()<sp/>){</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structelemento" kindref="compound">elemento</ref><sp/>x<sp/>=<sp/>c.<ref refid="classcola__max_1aea76788834703f74d5f70e3e1af92965" kindref="member">back</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>x&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.<ref refid="classcola__max_1a08669c970f917d3a711f3faf2709ca8d" kindref="member">quitar</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/uso_cola_max.cpp"/>
+  </compounddef>
+</doxygen>

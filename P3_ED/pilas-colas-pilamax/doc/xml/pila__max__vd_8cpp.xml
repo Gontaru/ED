@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="pila__max__vd_8cpp" kind="file" language="C++">
+    <compoundname>pila_max_vd.cpp</compoundname>
+    <includes refid="pila__max__vd_8h" local="yes">pila_max_vd.h</includes>
+    <includedby refid="pila__max_8cpp" local="yes">src/pila_max.cpp</includedby>
+    <incdepgraph>
+      <node id="70">
+        <label>elemento.h</label>
+        <link refid="elemento_8h_source"/>
+      </node>
+      <node id="68">
+        <label>cassert</label>
+      </node>
+      <node id="67">
+        <label>vector</label>
+      </node>
+      <node id="66">
+        <label>pila_max_vd.h</label>
+        <link refid="pila__max__vd_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>iostream</label>
+      </node>
+      <node id="65">
+        <label>src/pila_max_vd.cpp</label>
+        <link refid="pila_max_vd.cpp"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="72">
+        <label>src/pila_max.cpp</label>
+        <link refid="pila__max_8cpp"/>
+      </node>
+      <node id="71">
+        <label>src/pila_max_vd.cpp</label>
+        <link refid="pila_max_vd.cpp"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+<para>Fichero que implementa el TDA pila_max_vd. </para>    </briefdescription>
+    <detaileddescription>
+<para>Gestiona una secuencia de elementos con facilidades para la inserción y borrado de elementos en un extremo </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pila__max__vd_8h" kindref="compound">pila_max_vd.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classPila__max_1a591d803615d92722dc5d842d857e68f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structelemento" kindref="compound">elemento</ref><sp/><ref refid="classPila__max_1aa1d810ed1cbc8d68f8526179be48e705" kindref="member">Pila_max::tope</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structelemento" kindref="compound">elemento</ref><sp/>result;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.ele=-1;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.max_ele=-1;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!vacia())</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mipila.back();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPila__max_1ac4615eccf7d95bf4433e3da16c9aa2a2" kindref="member">Pila_max::quitar</ref>(){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mipila.pop_back();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPila__max_1a48579ac204c790d33c1f5206b1e4eef7" kindref="member">Pila_max::poner</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>e){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structelemento" kindref="compound">elemento</ref><sp/>newele;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newele.ele=e;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newele.max_ele<sp/>=<sp/>(<ref refid="classPila__max_1aa1d810ed1cbc8d68f8526179be48e705" kindref="member">tope</ref>().max_ele<sp/>&lt;<sp/>e)?<sp/>e<sp/>:<sp/><ref refid="classPila__max_1aa1d810ed1cbc8d68f8526179be48e705" kindref="member">tope</ref>().max_ele;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mipila.push_back(newele);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Pila_max::vacia()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mipila.empty();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPila__max_1a8441806b8bb54cd9a9d426e834179e5b" kindref="member">Pila_max::size</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mipila.size();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/pila_max_vd.cpp"/>
+  </compounddef>
+</doxygen>

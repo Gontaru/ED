@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="elemento_8h" kind="file" language="C++">
+    <compoundname>elemento.h</compoundname>
+    <includedby refid="cola__max_8h" local="yes">include/cola_max.h</includedby>
+    <invincdepgraph>
+      <node id="8">
+        <label>include/elemento.h</label>
+        <link refid="elemento.h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/uso_cola_max.cpp</label>
+        <link refid="uso__cola__max_8cpp"/>
+      </node>
+      <node id="9">
+        <label>include/cola_max.h</label>
+        <link refid="cola__max_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/cola_max.cpp</label>
+        <link refid="cola__max_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structelemento" prot="public">elemento</innerclass>
+    <briefdescription>
+<para>fichero de la estructura de datos elemento. ele es el valor asignado a elemento y max_ele es el valor máximo añadido hasta ahora </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6" refid="structelemento" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structelemento" kindref="compound">elemento</ref>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ele;</highlight><highlight class="comment">//&lt;<sp/>ele<sp/>valor<sp/>del<sp/>elemento</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_ele;</highlight><highlight class="comment">//&lt;<sp/>max_ele<sp/>maximo<sp/>valor<sp/>añadido<sp/>hasta<sp/>ahora<sp/>a<sp/>la<sp/>coleccion<sp/>de<sp/>elementos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/elemento.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,136 @@
+\section{Referencia de la plantilla de la Clase Cola$<$ T $>$}
+\label{classCola}\index{Cola$<$ T $>$@{Cola$<$ T $>$}}
+
+
+T.\+D.\+A. \doxyref{Cola}{p.}{classCola}.  
+
+
+
+
+{\ttfamily \#include $<$cola.\+h$>$}
+
+\subsection*{MÃ©todos pÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Cola} ()\label{classCola_aea3a971c7c522618f4dc972e8b4ff153}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+{\bf Cola} (const {\bf Cola}$<$ T $>$ \&original)
+\begin{DoxyCompactList}\small\item\em Constructor de copias. \end{DoxyCompactList}\item 
+{\bf $\sim$\+Cola} ()\label{classCola_af4d55930921c93c626006ba2e842530b}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+{\bf Cola} \& {\bf operator=} (const {\bf Cola}$<$ T $>$ \&otra)
+\begin{DoxyCompactList}\small\item\em Operador de asignación \end{DoxyCompactList}\item 
+bool {\bf vacia} () const \label{classCola_a63d527f52e207cd6783f12df481ad175}
+
+\begin{DoxyCompactList}\small\item\em Comprueba si la cola está vacía \end{DoxyCompactList}\item 
+T \& {\bf frente} ()\label{classCola_a1df4ad2b50116ef22e77ad3f77b02d29}
+
+\begin{DoxyCompactList}\small\item\em Devuelve el elemento del frente de la cola. \end{DoxyCompactList}\item 
+const T \& {\bf frente} () const \label{classCola_a79aa911410e9698d255cb00acee7b365}
+
+\begin{DoxyCompactList}\small\item\em Devuelve el elemento del frente de una cola constante. \end{DoxyCompactList}\item 
+void {\bf poner} (const T \&elem)
+\begin{DoxyCompactList}\small\item\em Añade un elemento al final de la cola. \end{DoxyCompactList}\item 
+void {\bf quitar} ()\label{classCola_a320766ddc7020424052c99e5c82a105d}
+
+\begin{DoxyCompactList}\small\item\em Quita el elemento del frente de la cola. \end{DoxyCompactList}\item 
+int {\bf num\+\_\+elementos} () const \label{classCola_aa8654a248be63133bacdc2e0e102f814}
+
+\begin{DoxyCompactList}\small\item\em Devuelve el número de elementos de la cola. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{DescripciÃ³n detallada}
+\subsubsection*{template$<$class T$>$\\*
+class Cola$<$ T $>$}
+
+T.\+D.\+A. \doxyref{Cola}{p.}{classCola}. 
+
+Una instancia {\itshape c} del tipo de dato abstracto \doxyref{Cola}{p.}{classCola} sobre un dominio {\itshape T} es una sucesión finita de elementos del mismo con un funcionamiento {\itshape F\+I\+FO} (First In, First Out\}). En una cola, las operaciones de inserción tienen lugar en uno de los extremos, denominado {\itshape final} de la cola, mientras que el borrado y consulta se lleva a cabo en el otro extremo, denominado {\itshape frente} de la cola. Una cola de longitud {\itshape n} la denotamos
+
+
+\begin{DoxyItemize}
+\item $<$a1,a2,a3,..,an$<$
+\end{DoxyItemize}
+
+En esta cola, tendremos acceso únicamente al elemento del {\itshape Frente}, es decir, a {\itshape a1}. El borrado o consulta de un elemento será sobre {\itshape a1}, mientras que la inserción de un nuevo elemento se hará después de {\itshape an} (final de la cola).
+
+Si n=0 diremos que la cola está vacía.
+
+El espacio requerido para el almacenamiento es O(n), donde n es el número de elementos de la cola.
+
+\begin{DoxyAuthor}{Autor}
+J. Fdez-\/\+Valdivia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Octubre 2011 
+\end{DoxyDate}
+
+
+\subsection{DocumentaciÃ³n del constructor y destructor}
+\index{Cola@{Cola}!Cola@{Cola}}
+\index{Cola@{Cola}!Cola@{Cola}}
+\subsubsection[{Cola(const Cola$<$ T $>$ \&original)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Cola}$<$ T $>$\+::{\bf Cola} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cola}$<$ T $>$ \&}]{original}
+\end{DoxyParamCaption}
+)}\label{classCola_a2249ab5603a92fddb8bd9bb55abeaa24}
+
+
+Constructor de copias. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em original} & La cola de la que se hará la copia. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{DocumentaciÃ³n de las funciones miembro}
+\index{Cola@{Cola}!operator=@{operator=}}
+\index{operator=@{operator=}!Cola@{Cola}}
+\subsubsection[{operator=(const Cola$<$ T $>$ \&otra)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Cola}$<$ T $>$ \& {\bf Cola}$<$ T $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cola}$<$ T $>$ \&}]{otra}
+\end{DoxyParamCaption}
+)}\label{classCola_a2ac480681dec95b8ffeea075507849e2}
+
+
+Operador de asignación 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em otra} & La cola que se va a asignar. \\
+\hline
+\end{DoxyParams}
+
+
+Referenciado por Cola$<$ elemento $>$\+::\+Cola().
+
+\index{Cola@{Cola}!poner@{poner}}
+\index{poner@{poner}!Cola@{Cola}}
+\subsubsection[{poner(const T \&elem)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Cola}$<$ T $>$\+::poner (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{elem}
+\end{DoxyParamCaption}
+)}\label{classCola_a4a902e5805ae74f8d80c6f3267fd14c4}
+
+
+Añade un elemento al final de la cola. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em elem} & Elemento que se va a añadir. \\
+\hline
+\end{DoxyParams}
+
+
+Referenciado por Cola$<$ elemento $>$\+::frente(), Pila\+\_\+max\+::poner() y Pila\+\_\+max\+::quitar().
+
+
+
+La documentaciÃ³n para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+include/{\bf cola.\+h}\item 
+src/cola.\+cpp\end{DoxyCompactItemize}

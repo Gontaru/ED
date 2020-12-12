@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>pila_max: Fichero Fuente include/pila_max_cola.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">pila_max
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">pila_max_cola.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pila__max__cola_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef __PILA_MAX_COLA__</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define __PILA_MAX_COLA__</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cola_8h.html">cola.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;elemento.h&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classPila__max.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPila__max.html">Pila_max</a>{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classCola.html">Cola&lt;elemento&gt;</a> mipila;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">const</span> <a class="code" href="structelemento.html">elemento</a> <a class="code" href="classPila__max.html#aa1d810ed1cbc8d68f8526179be48e705">tope</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classPila__max.html#ac4615eccf7d95bf4433e3da16c9aa2a2">quitar</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classPila__max.html#a48579ac204c790d33c1f5206b1e4eef7">poner</a>(<span class="keywordtype">int</span> e);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">         * @brief Método que comprueba si la pila está vacia</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">         * @return true en caso afirmativo, de lo contrario false   </span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">        */</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">bool</span> vacia() <span class="keyword">const</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classPila__max.html#a8441806b8bb54cd9a9d426e834179e5b">size</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classCola_html"><div class="ttname"><a href="classCola.html">Cola&lt; elemento &gt;</a></div></div>
+<div class="ttc" id="classPila__max_html"><div class="ttname"><a href="classPila__max.html">Pila_max</a></div><div class="ttdef"><b>Definition:</b> pila_max_cola.h:18</div></div>
+<div class="ttc" id="classPila__max_html_a8441806b8bb54cd9a9d426e834179e5b"><div class="ttname"><a href="classPila__max.html#a8441806b8bb54cd9a9d426e834179e5b">Pila_max::size</a></div><div class="ttdeci">int size() const </div><div class="ttdoc">Método que devuelve el tamaño de la pila. </div><div class="ttdef"><b>Definition:</b> pila_max_cola.cpp:46</div></div>
+<div class="ttc" id="structelemento_html"><div class="ttname"><a href="structelemento.html">elemento</a></div><div class="ttdef"><b>Definition:</b> elemento.h:8</div></div>
+<div class="ttc" id="classPila__max_html_aa1d810ed1cbc8d68f8526179be48e705"><div class="ttname"><a href="classPila__max.html#aa1d810ed1cbc8d68f8526179be48e705">Pila_max::tope</a></div><div class="ttdeci">const elemento tope()</div><div class="ttdoc">Método que devuelve el tope de la pila. </div><div class="ttdef"><b>Definition:</b> pila_max_cola.cpp:10</div></div>
+<div class="ttc" id="classPila__max_html_a48579ac204c790d33c1f5206b1e4eef7"><div class="ttname"><a href="classPila__max.html#a48579ac204c790d33c1f5206b1e4eef7">Pila_max::poner</a></div><div class="ttdeci">void poner(int e)</div><div class="ttdoc">Método que añade un elemento con valor e por el tope de la pila. </div><div class="ttdef"><b>Definition:</b> pila_max_cola.cpp:30</div></div>
+<div class="ttc" id="classPila__max_html_ac4615eccf7d95bf4433e3da16c9aa2a2"><div class="ttname"><a href="classPila__max.html#ac4615eccf7d95bf4433e3da16c9aa2a2">Pila_max::quitar</a></div><div class="ttdeci">void quitar()</div><div class="ttdoc">Método que quita el elemento del tope de la pila (igual que pop()) </div><div class="ttdef"><b>Definition:</b> pila_max_cola.cpp:20</div></div>
+<div class="ttc" id="cola_8h_html"><div class="ttname"><a href="cola_8h.html">cola.h</a></div><div class="ttdoc">Fichero cabecera del TDA Cola. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

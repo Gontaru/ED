@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structCola_1_1Celda" kind="struct" language="C++" prot="private">
+    <compoundname>Cola::Celda</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCola_1_1Celda_1af84ab659f7018e350c890fc6abb8a338" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Cola&lt; T &gt;::Celda::elemento</definition>
+        <argsstring></argsstring>
+        <name>elemento</name>
+        <briefdescription>
+<para>Elemento de información. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cola.h" line="45" column="1" bodyfile="include/cola.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCola_1_1Celda_1a7c389dfd00b09d44632a6d179c79961b" prot="public" static="no" mutable="no">
+        <type>Celda *</type>
+        <definition>Celda* Cola&lt; T &gt;::Celda::siguiente</definition>
+        <argsstring></argsstring>
+        <name>siguiente</name>
+        <briefdescription>
+<para>Puntero al siguiente nodo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cola.h" line="46" column="1" bodyfile="include/cola.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCola_1_1Celda_1a1ae66a8f4dad33d2bc811f0ac13150b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Cola&lt; T &gt;::Celda::Celda</definition>
+        <argsstring>()</argsstring>
+        <name>Celda</name>
+        <briefdescription>
+<para>Constructor por defecto. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cola.h" line="51" column="1" bodyfile="include/cola.h" bodystart="51" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structCola_1_1Celda_1a5a9b9c79bfac971bdaab7eaa49d68bf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Cola&lt; T &gt;::Celda::Celda</definition>
+        <argsstring>(const T &amp;elem, Celda *sig)</argsstring>
+        <name>Celda</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>elem</declname>
+        </param>
+        <param>
+          <type>Celda *</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+<para>Constructor con parámetros. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Elemento de información. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Puntero al siguiente nodo. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cola.h" line="58" column="1" bodyfile="include/cola.h" bodystart="58" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Cola&lt; T &gt;::Celda</label>
+        <childnode refid="1" relation="usage">
+          <edgelabel>siguiente</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/cola.h" line="44" column="1" bodyfile="include/cola.h" bodystart="44" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structCola_1_1Celda_1a1ae66a8f4dad33d2bc811f0ac13150b9" prot="public" virt="non-virtual"><scope>Cola::Celda</scope><name>Celda</name></member>
+      <member refid="structCola_1_1Celda_1a5a9b9c79bfac971bdaab7eaa49d68bf9" prot="public" virt="non-virtual"><scope>Cola::Celda</scope><name>Celda</name></member>
+      <member refid="structCola_1_1Celda_1af84ab659f7018e350c890fc6abb8a338" prot="public" virt="non-virtual"><scope>Cola::Celda</scope><name>elemento</name></member>
+      <member refid="structCola_1_1Celda_1a7c389dfd00b09d44632a6d179c79961b" prot="public" virt="non-virtual"><scope>Cola::Celda</scope><name>siguiente</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

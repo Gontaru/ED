@@ -1,0 +1,199 @@
+.TH "imagenES.h" 3 "Lunes, 2 de Noviembre de 2020" "tdaimagen" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+imagenES.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Enumeraciones"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTipoImagen\fP { \fBIMG_DESCONOCIDO\fP, \fBIMG_PGM\fP, \fBIMG_PPM\fP }
+.RI "\fITipo de imagen\&. \fP""
+.br
+.in -1c
+.SS "Funciones"
+
+.in +1c
+.ti -1c
+.RI "\fBTipoImagen\fP \fBLeerTipoImagen\fP (const char *nombre)"
+.br
+.RI "\fIDevuelve el tipo de imagen del archivo\&. \fP"
+.ti -1c
+.RI "unsigned char * \fBLeerImagenPPM\fP (const char *nombre, int &fils, int &cols)"
+.br
+.RI "\fILee una imagen de tipo PPM\&. \fP"
+.ti -1c
+.RI "bool \fBEscribirImagenPPM\fP (const char *nombre, const unsigned char *datos, const int fils, const int cols)"
+.br
+.RI "\fIEscribe una imagen de tipo PPM\&. \fP"
+.ti -1c
+.RI "unsigned char * \fBLeerImagenPGM\fP (const char *nombre, int &fils, int &cols)"
+.br
+.RI "\fILee una imagen de tipo PGM\&. \fP"
+.ti -1c
+.RI "bool \fBEscribirImagenPGM\fP (const char *nombre, const unsigned char *datos, const int fils, const int cols)"
+.br
+.RI "\fIEscribe una imagen de tipo PGM\&. \fP"
+.in -1c
+.SH "Documentaci√≥n de las enumeraciones"
+.PP 
+.SS "enum \fBTipoImagen\fP"
+
+.PP
+Tipo de imagen\&. Declara una serie de constantes para representar los distintos tipos de im·genes que se pueden manejar\&.
+.PP
+\fBVer tambi√©n:\fP
+.RS 4
+\fBLeerTipoImagen\fP 
+.RE
+.PP
+
+.SH "Documentaci√≥n de las funciones"
+.PP 
+.SS "bool EscribirImagenPGM (const char * nombre, const unsigned char * datos, const int fils, const int cols)"
+
+.PP
+Escribe una imagen de tipo PGM\&. 
+.PP
+\fBPar√°metros:\fP
+.RS 4
+\fInombre\fP archivo a escribir 
+.br
+\fIdatos\fP punteros a los \fIf\fP x \fIc\fP bytes que corresponden a los valores de los pÌxeles de la imagen de grises\&. 
+.br
+\fIfils\fP f filas de la imagen 
+.br
+\fIcols\fP c columnas de la imagen 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+si ha tenido Èxito en la escritura\&. 
+.RE
+.PP
+
+.PP
+Referenciado por Imagen::GuardarImagen()\&.
+.SS "bool EscribirImagenPPM (const char * nombre, const unsigned char * datos, const int fils, const int cols)"
+
+.PP
+Escribe una imagen de tipo PPM\&. 
+.PP
+\fBPar√°metros:\fP
+.RS 4
+\fInombre\fP archivo a escribir 
+.br
+\fIdatos\fP punteros a los \fIf\fP x \fIc\fP x 3 bytes que corresponden a los valores de los pÌxeles de la imagen en formato RGB\&. 
+.br
+\fIfils\fP filas de la imagen 
+.br
+\fIcols\fP columnas de la imagen 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+si ha tenido Èxito en la escritura\&. 
+.RE
+.PP
+
+.SS "unsigned char* LeerImagenPGM (const char * nombre, int & fils, int & cols)"
+
+.PP
+Lee una imagen de tipo PGM\&. 
+.PP
+\fBPar√°metros:\fP
+.RS 4
+\fInombre\fP archivo a leer 
+.br
+\fIfils\fP filas Par·metro de salida con las filas de la imagen\&. 
+.br
+\fIcols\fP columnas Par·metro de salida con las columnas de la imagen\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+puntero a una nueva zona de memoria que contiene \fIfilas\fP x \fIcolumnas\fP bytes que corresponden a los grises de todos los pÌxeles (desde la esquina superior izqda a la inferior drcha)\&. En caso de que no no se pueda leer, se devuelve cero\&. (0)\&. 
+.RE
+.PP
+\fBPostcondici√≥n:\fP
+.RS 4
+En caso de Èxito, el puntero apunta a una zona de memoria reservada en memoria din·mica\&. Ser· el usuario el responsable de liberarla\&. 
+.RE
+.PP
+
+.PP
+Hace referencia a LeerCabecera() y LeerTipo()\&.
+.PP
+Referenciado por Imagen::CargarImagen()\&.
+.SS "unsigned char* LeerImagenPPM (const char * nombre, int & fils, int & cols)"
+
+.PP
+Lee una imagen de tipo PPM\&. 
+.PP
+\fBPar√°metros:\fP
+.RS 4
+\fInombre\fP archivo a leer 
+.br
+\fIfils\fP filas Par·metro de salida con las filas de la imagen\&. 
+.br
+\fIcols\fP columnas Par·metro de salida con las columnas de la imagen\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+puntero a una nueva zona de memoria que contiene \fIfilas\fP x \fIcolumnas\fP x 3 bytes que corresponden a los colores de todos los pÌxeles en formato RGB (desde la esquina superior izqda a la inferior drcha)\&. En caso de que no no se pueda leer, se devuelve cero\&. (0)\&. 
+.RE
+.PP
+\fBPostcondici√≥n:\fP
+.RS 4
+En caso de Èxito, el puntero apunta a una zona de memoria reservada en memoria din·mica\&. Ser· el usuario el responsable de liberarla\&. 
+.RE
+.PP
+
+.PP
+Hace referencia a LeerCabecera() y LeerTipo()\&.
+.PP
+Referenciado por Imagen::CargarImagen()\&.
+.SS "\fBTipoImagen\fP LeerTipoImagen (const char * nombre)"
+
+.PP
+Devuelve el tipo de imagen del archivo\&. 
+.PP
+\fBPar√°metros:\fP
+.RS 4
+\fInombre\fP indica el archivo de disco que consultar 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve el tipo de la imagen en el archivo
+.RE
+.PP
+\fBVer tambi√©n:\fP
+.RS 4
+\fBTipoImagen\fP
+.RE
+.PP
+Devuelve el tipo de imagen del archivo\&.
+.PP
+\fBPar√°metros:\fP
+.RS 4
+\fInombre\fP a leer el tipo imagen 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+TipoImagen leido 
+.RE
+.PP
+
+.PP
+Hace referencia a LeerTipo()\&.
+.PP
+Referenciado por Imagen::CargarImagen()\&.
+.SH "Autor"
+.PP 
+Generado autom√°ticamente por Doxygen para tdaimagen del c√≥digo fuente\&.

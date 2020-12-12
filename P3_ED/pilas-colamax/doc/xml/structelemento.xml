@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structelemento" kind="struct" language="C++" prot="public">
+    <compoundname>elemento</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structelemento_1a954579dc7ed0033eefa875742ece867b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int elemento::ele</definition>
+        <argsstring></argsstring>
+        <name>ele</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/elemento.h" line="9" column="1" bodyfile="include/elemento.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structelemento_1abe7d5f0f605ec1757cd1d266a1d3007c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int elemento::max_ele</definition>
+        <argsstring></argsstring>
+        <name>max_ele</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/elemento.h" line="11" column="1" bodyfile="include/elemento.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/elemento.h" line="6" column="1" bodyfile="include/elemento.h" bodystart="6" bodyend="13"/>
+    <listofallmembers>
+      <member refid="structelemento_1a954579dc7ed0033eefa875742ece867b" prot="public" virt="non-virtual"><scope>elemento</scope><name>ele</name></member>
+      <member refid="structelemento_1abe7d5f0f605ec1757cd1d266a1d3007c" prot="public" virt="non-virtual"><scope>elemento</scope><name>max_ele</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

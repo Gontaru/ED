@@ -1,0 +1,320 @@
+.TH "main_imagen.cpp" 3 "Lunes, 2 de Noviembre de 2020" "tdaimagen" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main_imagen.cpp \- Fichero con definiciones para el tratamiento de imagenes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <cstring>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include <utility>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+\fC#include 'imagen\&.h'\fP
+.br
+
+.SS "Funciones"
+
+.in +1c
+.ti -1c
+.RI "void \fBCifrarMensaje\fP (\fBImagen\fP &I)"
+.br
+.RI "\fIfuncion que cifra un mensaje dentro de una imagen \fP"
+.ti -1c
+.RI "bool \fBLeerMensajeCifrado\fP (const \fBImagen\fP &I, string &cadena)"
+.br
+.RI "\fIfuncion que lee un mensaje cifrado en la imagen I \fP"
+.ti -1c
+.RI "void \fBAumentarContraste\fP (\fBImagen\fP &I, int min, int max)"
+.br
+.RI "\fIfuncion aumenta el contraste en la imagen I \fP"
+.ti -1c
+.RI "void \fBumbralizar_escala_grises\fP (\fBImagen\fP &I, int t1, int t2)"
+.br
+.RI "\fIfuncion que umbraliza la imagen I por valores dados \fP"
+.ti -1c
+.RI "void \fBumbralizar_automatico\fP (\fBImagen\fP &I, int e)"
+.br
+.RI "\fIfuncion que umbraliza automaticamente una imagen I \fP"
+.ti -1c
+.RI "void \fBzoom\fP (\fBImagen\fP &I, pair< int, int > ei, int dim)"
+.br
+.RI "\fIfuncion que hace un zoom en una imagen I a partir de la esquina superior izquierda de la imagen y las dimensiones del zoom a hacer \fP"
+.ti -1c
+.RI "void \fBenmarca_imagen\fP (\fBImagen\fP &I)"
+.br
+.RI "\fIfuncion que crea un marco negro a una imagen \fP"
+.ti -1c
+.RI "void \fBIcono_Imagen\fP (\fBImagen\fP &I)"
+.br
+.RI "\fIfuncion que crea un icono dada una \fBImagen\fP I a partir del numero de veces que sea desea reducir la imagen\&. \fP"
+.ti -1c
+.RI "void \fBnegativo\fP (\fBImagen\fP &I)"
+.br
+.RI "\fIfuncion que el negativo de una \fBImagen\fP \fP"
+.ti -1c
+.RI "int \fBmain\fP (int argc, char *argv[])"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Fichero con definiciones para el tratamiento de imagenes\&. 
+
+Permite realizar operaciones obre las imagene 
+.SH "Documentación de las funciones"
+.PP 
+.SS "void AumentarContraste (\fBImagen\fP & I, int min, int max)"
+
+.PP
+funcion aumenta el contraste en la imagen I 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fII\fP imagen a modificar 
+.br
+\fImin\fP minimo valor de gris para la imagen resultante 
+.br
+\fImax\fP maximo valor de gris para la imagen resultante 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+f y c deben ser mayores que 0 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+pixeles de I modificados 
+.RE
+.PP
+
+.PP
+Hace referencia a Imagen::asigna_pixel(), Imagen::consultar_pixel(), Imagen::num_columnas() y Imagen::num_filas()\&.
+.PP
+Referenciado por negativo()\&.
+.SS "void CifrarMensaje (\fBImagen\fP & I)"
+
+.PP
+funcion que cifra un mensaje dentro de una imagen 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fII\fP imagen donde cifraremos el mensaje 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+f y c deben ser mayores que 0 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+I es modificado para alojar el mensaje 
+.RE
+.PP
+
+.PP
+Hace referencia a Imagen::asigna_pixel(), Imagen::consultar_pixel(), Imagen::num_columnas() y Imagen::num_filas()\&.
+.PP
+Referenciado por negativo()\&.
+.SS "void enmarca_imagen (\fBImagen\fP & I)"
+
+.PP
+funcion que crea un marco negro a una imagen 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fII\fP imagen a modificar 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+f y c deben ser mayores que 0 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+marco negro creado en la \fBImagen\fP I 
+.RE
+.PP
+
+.PP
+Hace referencia a Imagen::asigna_pixel(), Imagen::num_columnas() y Imagen::num_filas()\&.
+.PP
+Referenciado por negativo()\&.
+.SS "void Icono_Imagen (\fBImagen\fP & I)"
+
+.PP
+funcion que crea un icono dada una \fBImagen\fP I a partir del numero de veces que sea desea reducir la imagen\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fII\fP imagen a modificar 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+f y c deben ser mayores que 0 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+La imagen I es encogida 
+.RE
+.PP
+
+.PP
+Hace referencia a Imagen::asigna_pixel(), Imagen::consultar_pixel(), Imagen::num_columnas() y Imagen::num_filas()\&.
+.PP
+Referenciado por negativo()\&.
+.SS "bool LeerMensajeCifrado (const \fBImagen\fP & I, string & cadena)"
+
+.PP
+funcion que lee un mensaje cifrado en la imagen I 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fII\fP imagen donde buscaremos el mensaje 
+.br
+\fIcadena\fP string donde guardaremos el mensaje leido 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+f y c deben ser mayores que 0 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve true si se ha leido un mensaje oculto, false en caso contrario 
+.RE
+.PP
+
+.PP
+Hace referencia a Imagen::consultar_pixel(), Imagen::num_columnas() y Imagen::num_filas()\&.
+.PP
+Referenciado por negativo()\&.
+.SS "void negativo (\fBImagen\fP & I)"
+
+.PP
+funcion que el negativo de una \fBImagen\fP 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fII\fP imagen a modificar 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+f y c deben ser mayores que 0 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+La imagen I es encogida 
+.RE
+.PP
+
+.PP
+Hace referencia a Imagen::asigna_pixel(), AumentarContraste(), Imagen::CargarImagen(), CifrarMensaje(), Imagen::consultar_pixel(), enmarca_imagen(), Imagen::GuardarImagen(), Icono_Imagen(), LeerMensajeCifrado(), Imagen::num_columnas(), Imagen::num_filas(), umbralizar_automatico(), umbralizar_escala_grises() y zoom()\&.
+.SS "void umbralizar_automatico (\fBImagen\fP & I, int e)"
+
+.PP
+funcion que umbraliza automaticamente una imagen I 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fII\fP imagen a modificar 
+.br
+\fIe\fP valor pequeño que condiciona el umbral calculado 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+f y c deben ser mayores que 0 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+pixeles de I modificados 
+.RE
+.PP
+
+.PP
+Hace referencia a Imagen::asigna_pixel(), Imagen::consultar_pixel(), Imagen::num_columnas() y Imagen::num_filas()\&.
+.PP
+Referenciado por negativo()\&.
+.SS "void umbralizar_escala_grises (\fBImagen\fP & I, int t1, int t2)"
+
+.PP
+funcion que umbraliza la imagen I por valores dados 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fII\fP imagen a modificar 
+.br
+\fIt1\fP rango minimo del umbral 
+.br
+\fIt2\fP rango maximo del umbral 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+f y c deben ser mayores que 0 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+pixeles de I modificados 
+.RE
+.PP
+
+.PP
+Hace referencia a Imagen::asigna_pixel(), Imagen::consultar_pixel(), Imagen::num_columnas() y Imagen::num_filas()\&.
+.PP
+Referenciado por negativo()\&.
+.SS "void zoom (\fBImagen\fP & I, pair< int, int > ei, int dim)"
+
+.PP
+funcion que hace un zoom en una imagen I a partir de la esquina superior izquierda de la imagen y las dimensiones del zoom a hacer 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fII\fP imagen a modificar 
+.br
+\fIei\fP par de coordenadas que determinan la esquina superior izquierda de la nueva imagen en la imagen actual\&. 
+.br
+\fIdim\fP dimension dimXdim del zoom a realizar 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+f y c deben ser mayores que 0 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+pixeles de I modificados 
+.RE
+.PP
+
+.PP
+Hace referencia a Imagen::asigna_pixel(), Imagen::consultar_pixel(), Imagen::num_columnas() y Imagen::num_filas()\&.
+.PP
+Referenciado por negativo()\&.
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para tdaimagen del código fuente\&.

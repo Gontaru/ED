@@ -1,0 +1,307 @@
+\section{Referencia de la Clase Imagen}
+\label{classImagen}\index{Imagen@{Imagen}}
+
+
+T.\+D.\+A. \doxyref{Imagen}{p.}{classImagen}.  
+
+
+
+
+{\ttfamily \#include $<$imagen.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Imagen} ()\label{classImagen_ab2e649aa7a105155c7bfdb846abf0528}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase. Crea una imagen vacía. \end{DoxyCompactList}\item 
+{\bf Imagen} (int f, int c)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+{\bf Imagen} (const {\bf Imagen} \&c)
+\begin{DoxyCompactList}\small\item\em Constructor de copias de la clase. \end{DoxyCompactList}\item 
+{\bf $\sim$\+Imagen} ()
+\begin{DoxyCompactList}\small\item\em Destructor de clase. Libera los recursos ocupados. \end{DoxyCompactList}\item 
+int {\bf num\+\_\+filas} () const 
+\begin{DoxyCompactList}\small\item\em Filas. \end{DoxyCompactList}\item 
+int {\bf num\+\_\+columnas} () const 
+\begin{DoxyCompactList}\small\item\em Columnas. \end{DoxyCompactList}\item 
+void {\bf asigna\+\_\+pixel} (int f, int c, unsigned char valor)
+\begin{DoxyCompactList}\small\item\em Asigna un pixel a una posicion de la imagen. \end{DoxyCompactList}\item 
+unsigned char {\bf consultar\+\_\+pixel} (int f, int c) const 
+\begin{DoxyCompactList}\small\item\em Devuelve el pixel en la posicion f y c. \end{DoxyCompactList}\item 
+bool {\bf Cargar\+Imagen} (const char $\ast$n)
+\begin{DoxyCompactList}\small\item\em carga la imagen con nombre n \end{DoxyCompactList}\item 
+bool {\bf Guardar\+Imagen} (const char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em guarda la imagen con nombre n \end{DoxyCompactList}\item 
+{\bf Imagen} \& {\bf operator=} (const {\bf Imagen} \&I)
+\begin{DoxyCompactList}\small\item\em sobrecarga del operador de copia \end{DoxyCompactList}\item 
+void {\bf Imprimir\+Imagen} ()\label{classImagen_a8c712214be8d39993f18726e81b18048}
+
+\begin{DoxyCompactList}\small\item\em Saca por pantalla la matriz imagen. \end{DoxyCompactList}\item 
+void {\bf Borrar} ()\label{classImagen_a8bcdb6302f3d1f9ad74e53eb9fb78eec}
+
+\begin{DoxyCompactList}\small\item\em Borra el objeto \doxyref{Imagen}{p.}{classImagen}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+T.\+D.\+A. \doxyref{Imagen}{p.}{classImagen}. 
+
+Una instancia {\itshape c} de la clase imagen representa una imagen con f filas y c columnas en una matriz de char byte imagen[filas][columnas] dónde cada casilla representa un pixel con valores entre [0,255], siendo 0 negro y 255 blanco
+
+\begin{DoxyAuthor}{Autor}
+Gonzalo Medina Medina 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Octubre 2020 
+\end{DoxyDate}
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\subsubsection[{Imagen(int f, int c)}]{\setlength{\rightskip}{0pt plus 5cm}Imagen\+::\+Imagen (
+\begin{DoxyParamCaption}
+\item[{int}]{f, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}\label{classImagen_a4b397c4a3dc0794cab351f96dc9390fd}
+
+
+Constructor de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & numero de filas de la imagen \\
+\hline
+{\em c} & numero de columnas de la imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Crea el numero racional n/d 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+f y c deben ser mayores que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+la imagen creada contiene valores basura 
+\end{DoxyPostcond}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\subsubsection[{Imagen(const Imagen \&c)}]{\setlength{\rightskip}{0pt plus 5cm}Imagen\+::\+Imagen (
+\begin{DoxyParamCaption}
+\item[{const {\bf Imagen} \&}]{c}
+\end{DoxyParamCaption}
+)}\label{classImagen_a54409a67f46c3a231ab65536395dd37c}
+
+
+Constructor de copias de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em c} & \doxyref{Imagen}{p.}{classImagen} a copiar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+la imagen creada contiene valores basura 
+\end{DoxyPostcond}
+
+
+Hace referencia a consultar\+\_\+pixel().
+
+\index{Imagen@{Imagen}!````~Imagen@{$\sim$\+Imagen}}
+\index{````~Imagen@{$\sim$\+Imagen}!Imagen@{Imagen}}
+\subsubsection[{$\sim$\+Imagen()}]{\setlength{\rightskip}{0pt plus 5cm}Imagen\+::$\sim$\+Imagen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classImagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}
+
+
+Destructor de clase. Libera los recursos ocupados. 
+
+\begin{DoxyPostcond}{Postcondición}
+No devuelve nada. el objeto no puede volver a usarse a no ser que se vuelva a inicializar 
+\end{DoxyPostcond}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Imagen@{Imagen}!asigna\+\_\+pixel@{asigna\+\_\+pixel}}
+\index{asigna\+\_\+pixel@{asigna\+\_\+pixel}!Imagen@{Imagen}}
+\subsubsection[{asigna\+\_\+pixel(int f, int c, unsigned char valor)}]{\setlength{\rightskip}{0pt plus 5cm}void Imagen\+::asigna\+\_\+pixel (
+\begin{DoxyParamCaption}
+\item[{int}]{f, }
+\item[{int}]{c, }
+\item[{unsigned char}]{valor}
+\end{DoxyParamCaption}
+)}\label{classImagen_a53f60c37b92d9961db30458f03f8d9c7}
+
+
+Asigna un pixel a una posicion de la imagen. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & fila a la que asignar el pixel \\
+\hline
+{\em c} & columna a la que asignar el pixel \\
+\hline
+{\em valor} & es un valor entre[0,255] a asignar en el pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+0$<$f$<$=filas, 0$<$c$<$=columnas, 0$<$valor$<$=255 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+No devuelve nada. La imagen se modifica. 
+\end{DoxyPostcond}
+
+
+Referenciado por Aumentar\+Contraste(), Cargar\+Imagen(), Cifrar\+Mensaje(), enmarca\+\_\+imagen(), Icono\+\_\+\+Imagen(), negativo(), umbralizar\+\_\+automatico(), umbralizar\+\_\+escala\+\_\+grises() y zoom().
+
+\index{Imagen@{Imagen}!Cargar\+Imagen@{Cargar\+Imagen}}
+\index{Cargar\+Imagen@{Cargar\+Imagen}!Imagen@{Imagen}}
+\subsubsection[{Cargar\+Imagen(const char $\ast$n)}]{\setlength{\rightskip}{0pt plus 5cm}bool Imagen\+::\+Cargar\+Imagen (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{n}
+\end{DoxyParamCaption}
+)}\label{classImagen_ae315b88ee45fbfccc4ae204c79834f0c}
+
+
+carga la imagen con nombre n 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & nombre del fichero de la imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+devuelve true si se ha cargado bien la imagen, false en cualquier otro caso 
+\end{DoxyReturn}
+
+
+Hace referencia a asigna\+\_\+pixel(), Leer\+Imagen\+P\+G\+M(), Leer\+Imagen\+P\+P\+M() y Leer\+Tipo\+Imagen().
+
+
+
+Referenciado por negativo().
+
+\index{Imagen@{Imagen}!consultar\+\_\+pixel@{consultar\+\_\+pixel}}
+\index{consultar\+\_\+pixel@{consultar\+\_\+pixel}!Imagen@{Imagen}}
+\subsubsection[{consultar\+\_\+pixel(int f, int c) const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Imagen\+::consultar\+\_\+pixel (
+\begin{DoxyParamCaption}
+\item[{int}]{f, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+) const}\label{classImagen_a8fe4f4dc11128b6f534fed35751d7bef}
+
+
+Devuelve el pixel en la posicion f y c. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & fila en la que consultar \\
+\hline
+{\em c} & columna en la que consultar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+0$<$f$<$=filas, 0$<$c$<$=columnas, e imagen[f][c]!=null 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Devuelve}
+devuelve unsigned char con el valor de la celda 
+\end{DoxyReturn}
+
+
+Referenciado por Aumentar\+Contraste(), Cifrar\+Mensaje(), Icono\+\_\+\+Imagen(), Imagen(), Leer\+Mensaje\+Cifrado(), negativo(), operator=(), umbralizar\+\_\+automatico(), umbralizar\+\_\+escala\+\_\+grises() y zoom().
+
+\index{Imagen@{Imagen}!Guardar\+Imagen@{Guardar\+Imagen}}
+\index{Guardar\+Imagen@{Guardar\+Imagen}!Imagen@{Imagen}}
+\subsubsection[{Guardar\+Imagen(const char $\ast$nombre)}]{\setlength{\rightskip}{0pt plus 5cm}bool Imagen\+::\+Guardar\+Imagen (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nombre}
+\end{DoxyParamCaption}
+)}\label{classImagen_a0fc6e5dceec4d621041299fd12e017c4}
+
+
+guarda la imagen con nombre n 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & del fichero de la imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+devuelve true si se ha guardado bien la imagen, false en cualquier otro caso 
+\end{DoxyReturn}
+
+
+Hace referencia a Escribir\+Imagen\+P\+G\+M().
+
+
+
+Referenciado por negativo().
+
+\index{Imagen@{Imagen}!num\+\_\+columnas@{num\+\_\+columnas}}
+\index{num\+\_\+columnas@{num\+\_\+columnas}!Imagen@{Imagen}}
+\subsubsection[{num\+\_\+columnas() const }]{\setlength{\rightskip}{0pt plus 5cm}int Imagen\+::num\+\_\+columnas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classImagen_a29f1a1d6a8b9afb41036d76e9d64d4eb}
+
+
+Columnas. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve el numero de columnas de la imagen 
+\end{DoxyReturn}
+
+
+Referenciado por Aumentar\+Contraste(), Cifrar\+Mensaje(), enmarca\+\_\+imagen(), Icono\+\_\+\+Imagen(), Leer\+Mensaje\+Cifrado(), negativo(), umbralizar\+\_\+automatico(), umbralizar\+\_\+escala\+\_\+grises() y zoom().
+
+\index{Imagen@{Imagen}!num\+\_\+filas@{num\+\_\+filas}}
+\index{num\+\_\+filas@{num\+\_\+filas}!Imagen@{Imagen}}
+\subsubsection[{num\+\_\+filas() const }]{\setlength{\rightskip}{0pt plus 5cm}int Imagen\+::num\+\_\+filas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classImagen_a56e4e6b003149ea2bc9dfecf09b22d5a}
+
+
+Filas. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve el numero de filas de la imagen 
+\end{DoxyReturn}
+
+
+Referenciado por Aumentar\+Contraste(), Cifrar\+Mensaje(), enmarca\+\_\+imagen(), Icono\+\_\+\+Imagen(), Leer\+Mensaje\+Cifrado(), negativo(), umbralizar\+\_\+automatico(), umbralizar\+\_\+escala\+\_\+grises() y zoom().
+
+\index{Imagen@{Imagen}!operator=@{operator=}}
+\index{operator=@{operator=}!Imagen@{Imagen}}
+\subsubsection[{operator=(const Imagen \&\+I)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Imagen} \& Imagen\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Imagen} \&}]{I}
+\end{DoxyParamCaption}
+)}\label{classImagen_aeecce0f8947fbefd2468e8b43ac33f4a}
+
+
+sobrecarga del operador de copia 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em I} & de la imagen a copiar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+devuelve la dirección de memoria del objeto \doxyref{Imagen}{p.}{classImagen} 
+\end{DoxyReturn}
+
+
+Hace referencia a consultar\+\_\+pixel().
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+{\bf imagen.\+h}\item 
+{\bf imagen.\+cpp}\end{DoxyCompactItemize}

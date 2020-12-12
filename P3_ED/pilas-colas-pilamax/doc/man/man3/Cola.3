@@ -1,0 +1,131 @@
+.TH "Cola< T >" 3 "Viernes, 13 de Noviembre de 2020" "pila_max" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Cola< T > \- T\&.D\&.A\&. \fBCola\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cola\&.h>\fP
+.SS "MÃ©todos pÃºblicos"
+
+.in +1c
+.ti -1c
+.RI "\fBCola\fP ()"
+.br
+.RI "\fIConstructor por defecto\&. \fP"
+.ti -1c
+.RI "\fBCola\fP (const \fBCola\fP< T > &original)"
+.br
+.RI "\fIConstructor de copias\&. \fP"
+.ti -1c
+.RI "\fB~Cola\fP ()"
+.br
+.RI "\fIDestructor\&. \fP"
+.ti -1c
+.RI "\fBCola\fP & \fBoperator=\fP (const \fBCola\fP< T > &otra)"
+.br
+.RI "\fIOperador de asignación \fP"
+.ti -1c
+.RI "bool \fBvacia\fP () const "
+.br
+.RI "\fIComprueba si la cola está vacía \fP"
+.ti -1c
+.RI "T & \fBfrente\fP ()"
+.br
+.RI "\fIDevuelve el elemento del frente de la cola\&. \fP"
+.ti -1c
+.RI "const T & \fBfrente\fP () const "
+.br
+.RI "\fIDevuelve el elemento del frente de una cola constante\&. \fP"
+.ti -1c
+.RI "void \fBponer\fP (const T &elem)"
+.br
+.RI "\fIAñade un elemento al final de la cola\&. \fP"
+.ti -1c
+.RI "void \fBquitar\fP ()"
+.br
+.RI "\fIQuita el elemento del frente de la cola\&. \fP"
+.ti -1c
+.RI "int \fBnum_elementos\fP () const "
+.br
+.RI "\fIDevuelve el número de elementos de la cola\&. \fP"
+.in -1c
+.SH "DescripciÃ³n detallada"
+.PP 
+
+.SS "template<class T>
+.br
+class Cola< T >"
+T\&.D\&.A\&. \fBCola\fP\&. 
+
+Una instancia \fIc\fP del tipo de dato abstracto \fBCola\fP sobre un dominio \fIT\fP es una sucesión finita de elementos del mismo con un funcionamiento \fIFIFO\fP (First In, First Out})\&. En una cola, las operaciones de inserción tienen lugar en uno de los extremos, denominado \fIfinal\fP de la cola, mientras que el borrado y consulta se lleva a cabo en el otro extremo, denominado \fIfrente\fP de la cola\&. Una cola de longitud \fIn\fP la denotamos
+.PP
+.IP "\(bu" 2
+<a1,a2,a3,\&.\&.,an<
+.PP
+.PP
+En esta cola, tendremos acceso únicamente al elemento del \fIFrente\fP, es decir, a \fIa1\fP\&. El borrado o consulta de un elemento será sobre \fIa1\fP, mientras que la inserción de un nuevo elemento se hará después de \fIan\fP (final de la cola)\&.
+.PP
+Si n=0 diremos que la cola está vacía\&.
+.PP
+El espacio requerido para el almacenamiento es O(n), donde n es el número de elementos de la cola\&.
+.PP
+\fBAutor:\fP
+.RS 4
+J\&. Fdez-Valdivia 
+.RE
+.PP
+\fBFecha:\fP
+.RS 4
+Octubre 2011 
+.RE
+.PP
+
+.SH "DocumentaciÃ³n del constructor y destructor"
+.PP 
+.SS "template<class T> \fBCola\fP< T >::\fBCola\fP (const \fBCola\fP< T > & original)"
+
+.PP
+Constructor de copias\&. 
+.PP
+\fBParÃ¡metros:\fP
+.RS 4
+\fIoriginal\fP La cola de la que se hará la copia\&. 
+.RE
+.PP
+
+.SH "DocumentaciÃ³n de las funciones miembro"
+.PP 
+.SS "template<class T> \fBCola\fP< T > & \fBCola\fP< T >::operator= (const \fBCola\fP< T > & otra)"
+
+.PP
+Operador de asignación 
+.PP
+\fBParÃ¡metros:\fP
+.RS 4
+\fIotra\fP La cola que se va a asignar\&. 
+.RE
+.PP
+
+.PP
+Referenciado por Cola< elemento >::Cola()\&.
+.SS "template<class T> void \fBCola\fP< T >::poner (const T & elem)"
+
+.PP
+Añade un elemento al final de la cola\&. 
+.PP
+\fBParÃ¡metros:\fP
+.RS 4
+\fIelem\fP Elemento que se va a añadir\&. 
+.RE
+.PP
+
+.PP
+Referenciado por Cola< elemento >::frente(), Pila_max::poner() y Pila_max::quitar()\&.
+
+.SH "Autor"
+.PP 
+Generado automÃ¡ticamente por Doxygen para pila_max del cÃ³digo fuente\&.

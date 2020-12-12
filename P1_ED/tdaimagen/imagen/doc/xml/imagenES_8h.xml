@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="imagenES_8h" kind="file" language="C++">
+    <compoundname>imagenES.h</compoundname>
+    <includedby refid="imagen_8h" local="yes">imagen.h</includedby>
+    <includedby refid="imagenES_8cpp" local="yes">imagenES.cpp</includedby>
+    <invincdepgraph>
+      <node id="19">
+        <label>imagenES.h</label>
+        <link refid="imagenES.h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>imagenES.cpp</label>
+        <link refid="imagenES_8cpp"/>
+      </node>
+      <node id="22">
+        <label>main_imagen.cpp</label>
+        <link refid="main__imagen_8cpp"/>
+      </node>
+      <node id="20">
+        <label>imagen.h</label>
+        <link refid="imagen_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>imagen.cpp</label>
+        <link refid="imagen_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="imagenES_8h_1a8914f6544a484741b05c092d9e7522ed" prot="public" static="no">
+        <name>TipoImagen</name>
+        <enumvalue id="imagenES_8h_1a8914f6544a484741b05c092d9e7522eda23c8d70e6eadf2d0d0ee1fd3bb293384" prot="public">
+          <name>IMG_DESCONOCIDO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="imagenES_8h_1a8914f6544a484741b05c092d9e7522eda8fbef75c1a0002dd6099c6cc1a43e441" prot="public">
+          <name>IMG_PGM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="imagenES_8h_1a8914f6544a484741b05c092d9e7522eda1269c51434b906a7e507f5b49663bf4f" prot="public">
+          <name>IMG_PPM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Tipo de imagen. </para>        </briefdescription>
+        <detaileddescription>
+<para>Declara una serie de constantes para representar los distintos tipos de imágenes que se pueden manejar.</para><para><simplesect kind="see"><para><ref refid="imagenES_8h_1acaa5fb277940aceed29f86c093a3d89c" kindref="member">LeerTipoImagen</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagenES.h" line="16" column="1" bodyfile="imagenES.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="imagenES_8h_1acaa5fb277940aceed29f86c093a3d89c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imagenES_8h_1a8914f6544a484741b05c092d9e7522ed" kindref="member">TipoImagen</ref></type>
+        <definition>TipoImagen LeerTipoImagen</definition>
+        <argsstring>(const char *nombre)</argsstring>
+        <name>LeerTipoImagen</name>
+        <param>
+          <type>const char *</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>Devuelve el tipo de imagen del archivo. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indica el archivo de disco que consultar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve el tipo de la imagen en el archivo</para></simplesect>
+<simplesect kind="see"><para><ref refid="imagenES_8h_1a8914f6544a484741b05c092d9e7522ed" kindref="member">TipoImagen</ref></para></simplesect>
+Devuelve el tipo de imagen del archivo.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a leer el tipo imagen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TipoImagen leido </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagenES.h" line="26" column="1" bodyfile="imagenES.cpp" bodystart="46" bodyend="49"/>
+        <references refid="imagenES_8cpp_1a16834dd3756f7baf1e5ef710ad7b0e3b" compoundref="imagenES_8cpp" startline="20" endline="37">LeerTipo</references>
+        <referencedby refid="classImagen_1ae315b88ee45fbfccc4ae204c79834f0c" compoundref="imagen_8cpp" startline="110" endline="163">Imagen::CargarImagen</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="imagenES_8h_1a05aea20533de5bbd02789f76aafbb99b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char* LeerImagenPPM</definition>
+        <argsstring>(const char *nombre, int &amp;fils, int &amp;cols)</argsstring>
+        <name>LeerImagenPPM</name>
+        <param>
+          <type>const char *</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>fils</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+<para>Lee una imagen de tipo PPM. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>archivo a leer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fils</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filas Parámetro de salida con las filas de la imagen. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>columnas Parámetro de salida con las columnas de la imagen. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>puntero a una nueva zona de memoria que contiene <emphasis>filas</emphasis> x <emphasis>columnas</emphasis> x 3 bytes que corresponden a los colores de todos los píxeles en formato RGB (desde la esquina superior izqda a la inferior drcha). En caso de que no no se pueda leer, se devuelve cero. (0). </para></simplesect>
+<simplesect kind="post"><para>En caso de éxito, el puntero apunta a una zona de memoria reservada en memoria dinámica. Será el usuario el responsable de liberarla. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagenES.h" line="41" column="1" bodyfile="imagenES.cpp" bodystart="96" bodyend="113"/>
+        <references refid="imagenES_8cpp_1a0e193b2477b18f021255d69362992859" compoundref="imagenES_8cpp" startline="77" endline="90">LeerCabecera</references>
+        <references refid="imagenES_8cpp_1a16834dd3756f7baf1e5ef710ad7b0e3b" compoundref="imagenES_8cpp" startline="20" endline="37">LeerTipo</references>
+        <referencedby refid="classImagen_1ae315b88ee45fbfccc4ae204c79834f0c" compoundref="imagen_8cpp" startline="110" endline="163">Imagen::CargarImagen</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="imagenES_8h_1ae149be8653b9f8c7321ac40577e7518c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EscribirImagenPPM</definition>
+        <argsstring>(const char *nombre, const unsigned char *datos, const int fils, const int cols)</argsstring>
+        <name>EscribirImagenPPM</name>
+        <param>
+          <type>const char *</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>datos</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>fils</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+<para>Escribe una imagen de tipo PPM. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>archivo a escribir </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>datos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>punteros a los <emphasis>f</emphasis> x <emphasis>c</emphasis> x 3 bytes que corresponden a los valores de los píxeles de la imagen en formato RGB. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fils</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filas de la imagen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>columnas de la imagen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>si ha tenido éxito en la escritura. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagenES.h" line="53" column="1" bodyfile="imagenES.cpp" bodystart="138" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="imagenES_8h_1a03340a1e1e4a88385c972bb4af463649" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char* LeerImagenPGM</definition>
+        <argsstring>(const char *nombre, int &amp;fils, int &amp;cols)</argsstring>
+        <name>LeerImagenPGM</name>
+        <param>
+          <type>const char *</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>fils</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+<para>Lee una imagen de tipo PGM. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>archivo a leer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fils</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filas Parámetro de salida con las filas de la imagen. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>columnas Parámetro de salida con las columnas de la imagen. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>puntero a una nueva zona de memoria que contiene <emphasis>filas</emphasis> x <emphasis>columnas</emphasis> bytes que corresponden a los grises de todos los píxeles (desde la esquina superior izqda a la inferior drcha). En caso de que no no se pueda leer, se devuelve cero. (0). </para></simplesect>
+<simplesect kind="post"><para>En caso de éxito, el puntero apunta a una zona de memoria reservada en memoria dinámica. Será el usuario el responsable de liberarla. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagenES.h" line="69" column="1" bodyfile="imagenES.cpp" bodystart="117" bodyend="134"/>
+        <references refid="imagenES_8cpp_1a0e193b2477b18f021255d69362992859" compoundref="imagenES_8cpp" startline="77" endline="90">LeerCabecera</references>
+        <references refid="imagenES_8cpp_1a16834dd3756f7baf1e5ef710ad7b0e3b" compoundref="imagenES_8cpp" startline="20" endline="37">LeerTipo</references>
+        <referencedby refid="classImagen_1ae315b88ee45fbfccc4ae204c79834f0c" compoundref="imagen_8cpp" startline="110" endline="163">Imagen::CargarImagen</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="imagenES_8h_1a4b649cc272f02649563791d5ed75b557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EscribirImagenPGM</definition>
+        <argsstring>(const char *nombre, const unsigned char *datos, const int fils, const int cols)</argsstring>
+        <name>EscribirImagenPGM</name>
+        <param>
+          <type>const char *</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>datos</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>fils</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+<para>Escribe una imagen de tipo PGM. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>archivo a escribir </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>datos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>punteros a los <emphasis>f</emphasis> x <emphasis>c</emphasis> bytes que corresponden a los valores de los píxeles de la imagen de grises. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fils</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>f filas de la imagen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>c columnas de la imagen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>si ha tenido éxito en la escritura. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagenES.h" line="81" column="1" bodyfile="imagenES.cpp" bodystart="155" bodyend="169"/>
+        <referencedby refid="classImagen_1a0fc6e5dceec4d621041299fd12e017c4" compoundref="imagen_8cpp" startline="166" endline="182">Imagen::GuardarImagen</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>_IMAGEN_ES_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_IMAGEN_ES_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="imagenES_8h_1a8914f6544a484741b05c092d9e7522ed" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="imagenES_8h_1a8914f6544a484741b05c092d9e7522ed" kindref="member">TipoImagen</ref><sp/>{IMG_DESCONOCIDO,<sp/>IMG_PGM,<sp/>IMG_PPM};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="imagenES_8h_1a8914f6544a484741b05c092d9e7522ed" kindref="member">TipoImagen</ref><sp/><ref refid="imagenES_8h_1acaa5fb277940aceed29f86c093a3d89c" kindref="member">LeerTipoImagen</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*nombre);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="imagenES_8h_1a05aea20533de5bbd02789f76aafbb99b" kindref="member">LeerImagenPPM</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*nombre,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>fils,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>cols);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="imagenES_8h_1ae149be8653b9f8c7321ac40577e7518c" kindref="member">EscribirImagenPPM</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*nombre,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*datos,<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fils,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cols);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="imagenES_8h_1a03340a1e1e4a88385c972bb4af463649" kindref="member">LeerImagenPGM</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*nombre,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>fils,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>cols);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="imagenES_8h_1a4b649cc272f02649563791d5ed75b557" kindref="member">EscribirImagenPGM</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*nombre,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*datos,<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fils,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cols);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Fin<sp/>Fichero:<sp/>imagenES.h<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="imagenES.h"/>
+  </compounddef>
+</doxygen>

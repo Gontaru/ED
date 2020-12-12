@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>tdaimagen: Fichero Fuente imagen.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">tdaimagen
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imagen.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="imagen_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __IMAGEN__</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __IMAGEN__</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imagenES_8h.html">imagenES.h</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="imagen_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="imagen_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a>;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classImagen.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classImagen.html">Imagen</a>{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">int</span> filas;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span> columnas;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> **imagen;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classImagen.html">Imagen</a>();</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classImagen.html">Imagen</a>(<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classImagen.html">Imagen</a> (<span class="keyword">const</span> <a class="code" href="classImagen.html">Imagen</a>&amp; c);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  ~<a class="code" href="classImagen.html">Imagen</a>();  </div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classImagen.html#a56e4e6b003149ea2bc9dfecf09b22d5a">   88</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classImagen.html#a56e4e6b003149ea2bc9dfecf09b22d5a">num_filas</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> filas;};</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classImagen.html#a29f1a1d6a8b9afb41036d76e9d64d4eb">   94</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classImagen.html#a29f1a1d6a8b9afb41036d76e9d64d4eb">num_columnas</a>()<span class="keyword">const </span>{<span class="keywordflow">return</span> columnas;};</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">void</span> asigna_pixel(<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> valor);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> consultar_pixel(<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c)<span class="keyword">const</span>;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">bool</span> CargarImagen(<span class="keyword">const</span> <span class="keywordtype">char</span> * n);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">bool</span> GuardarImagen(<span class="keyword">const</span> <span class="keywordtype">char</span> *nombre);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="classImagen.html">Imagen</a> &amp; operator=(<span class="keyword">const</span> <a class="code" href="classImagen.html">Imagen</a> &amp;I);</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keywordtype">void</span> ImprimirImagen();</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keywordtype">void</span> Borrar();</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;};</div><div class="ttc" id="classImagen_html"><div class="ttname"><a href="classImagen.html">Imagen</a></div><div class="ttdoc">T.D.A. Imagen. </div><div class="ttdef"><b>Definition:</b> imagen.h:30</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classImagen_html_a29f1a1d6a8b9afb41036d76e9d64d4eb"><div class="ttname"><a href="classImagen.html#a29f1a1d6a8b9afb41036d76e9d64d4eb">Imagen::num_columnas</a></div><div class="ttdeci">int num_columnas() const </div><div class="ttdoc">Columnas. </div><div class="ttdef"><b>Definition:</b> imagen.h:94</div></div>
+<div class="ttc" id="classImagen_html_a56e4e6b003149ea2bc9dfecf09b22d5a"><div class="ttname"><a href="classImagen.html#a56e4e6b003149ea2bc9dfecf09b22d5a">Imagen::num_filas</a></div><div class="ttdeci">int num_filas() const </div><div class="ttdoc">Filas. </div><div class="ttdef"><b>Definition:</b> imagen.h:88</div></div>
+<div class="ttc" id="imagenES_8h_html"><div class="ttname"><a href="imagenES_8h.html">imagenES.h</a></div></div>
+<div class="ttc" id="imagen_8h_html_a0c8186d9b9b7880309c27230bbb5e69d"><div class="ttname"><a href="imagen_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></div><div class="ttdeci">unsigned char byte</div><div class="ttdoc">byte tipo de dato a tratar en los pixeles </div><div class="ttdef"><b>Definition:</b> imagen.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

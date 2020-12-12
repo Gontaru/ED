@@ -1,0 +1,96 @@
+.TH "cola_max" 3 "Viernes, 13 de Noviembre de 2020" "cola_max" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cola_max \- clase \fBcola_max\fP que representa una cola que guarda el valor máximo añadido  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cola_max\&.h>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "const \fBelemento\fP \fBfront\fP ()"
+.br
+.RI "\fIMétodo que devuelve el primer elemento de la cola\&. \fP"
+.ti -1c
+.RI "const \fBelemento\fP \fBback\fP ()"
+.br
+.RI "\fIMétodo que devuelve el último elemento de la cola\&. \fP"
+.ti -1c
+.RI "void \fBquitar\fP ()"
+.br
+.RI "\fIMétodo que quita el último elemento de la cola\&. \fP"
+.ti -1c
+.RI "void \fBponer\fP (int e)"
+.br
+.RI "\fIMétodo que añade un elemento con valor e al principio de la cola\&. \fP"
+.ti -1c
+.RI "bool \fBvacia\fP () const "
+.br
+.RI "\fIMétodo que comprueba si la cola está vacía\&. \fP"
+.ti -1c
+.RI "int \fBsize\fP () const "
+.br
+.RI "\fIMétodo que devuelve el número de elementos de la cola\&. \fP"
+.in -1c
+.SH "Descripción detallada"
+.PP 
+clase \fBcola_max\fP que representa una cola que guarda el valor máximo añadido 
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "const \fBelemento\fP cola_max::back ()"
+
+.PP
+Método que devuelve el último elemento de la cola\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+objeto constante de tipo elemento 
+.RE
+.PP
+
+.PP
+Referenciado por operator<<()\&.
+.SS "const \fBelemento\fP cola_max::front ()"
+
+.PP
+Método que devuelve el primer elemento de la cola\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+objeto constante de tipo elemento 
+.RE
+.PP
+
+.SS "int cola_max::size () const"
+
+.PP
+Método que devuelve el número de elementos de la cola\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+número de elementos de la cola 
+.RE
+.PP
+
+.SS "bool cola_max::vacia () const"
+
+.PP
+Método que comprueba si la cola está vacía\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+true si está vacía, de lo contrario false 
+.RE
+.PP
+
+.PP
+Referenciado por operator<<() y poner()\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para cola_max del código fuente\&.

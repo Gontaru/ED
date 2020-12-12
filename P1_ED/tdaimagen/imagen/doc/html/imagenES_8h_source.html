@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>tdaimagen: Fichero Fuente imagenES.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">tdaimagen
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imagenES.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="imagenES_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef _IMAGEN_ES_H_</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define _IMAGEN_ES_H_</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="imagenES_8h.html#a8914f6544a484741b05c092d9e7522ed">   16</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="imagenES_8h.html#a8914f6544a484741b05c092d9e7522ed">TipoImagen</a> {IMG_DESCONOCIDO, IMG_PGM, IMG_PPM};</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<a class="code" href="imagenES_8h.html#a8914f6544a484741b05c092d9e7522ed">TipoImagen</a> <a class="code" href="imagenES_8h.html#acaa5fb277940aceed29f86c093a3d89c">LeerTipoImagen</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *nombre);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code" href="imagenES_8h.html#a05aea20533de5bbd02789f76aafbb99b">LeerImagenPPM</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *nombre, <span class="keywordtype">int</span>&amp; fils, <span class="keywordtype">int</span>&amp; cols);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="imagenES_8h.html#ae149be8653b9f8c7321ac40577e7518c">EscribirImagenPPM</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *nombre, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *datos, </div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> fils, <span class="keyword">const</span> <span class="keywordtype">int</span> cols);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code" href="imagenES_8h.html#a03340a1e1e4a88385c972bb4af463649">LeerImagenPGM</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *nombre, <span class="keywordtype">int</span>&amp; fils, <span class="keywordtype">int</span>&amp; cols);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="imagenES_8h.html#a4b649cc272f02649563791d5ed75b557">EscribirImagenPGM</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *nombre, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *datos, </div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> fils, <span class="keyword">const</span> <span class="keywordtype">int</span> cols);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">/* Fin Fichero: imagenES.h */</span></div><div class="ttc" id="imagenES_8h_html_a8914f6544a484741b05c092d9e7522ed"><div class="ttname"><a href="imagenES_8h.html#a8914f6544a484741b05c092d9e7522ed">TipoImagen</a></div><div class="ttdeci">TipoImagen</div><div class="ttdoc">Tipo de imagen. </div><div class="ttdef"><b>Definition:</b> imagenES.h:16</div></div>
+<div class="ttc" id="imagenES_8h_html_a05aea20533de5bbd02789f76aafbb99b"><div class="ttname"><a href="imagenES_8h.html#a05aea20533de5bbd02789f76aafbb99b">LeerImagenPPM</a></div><div class="ttdeci">unsigned char * LeerImagenPPM(const char *nombre, int &amp;fils, int &amp;cols)</div><div class="ttdoc">Lee una imagen de tipo PPM. </div><div class="ttdef"><b>Definition:</b> imagenES.cpp:96</div></div>
+<div class="ttc" id="imagenES_8h_html_acaa5fb277940aceed29f86c093a3d89c"><div class="ttname"><a href="imagenES_8h.html#acaa5fb277940aceed29f86c093a3d89c">LeerTipoImagen</a></div><div class="ttdeci">TipoImagen LeerTipoImagen(const char *nombre)</div><div class="ttdoc">Devuelve el tipo de imagen del archivo. </div><div class="ttdef"><b>Definition:</b> imagenES.cpp:46</div></div>
+<div class="ttc" id="imagenES_8h_html_a4b649cc272f02649563791d5ed75b557"><div class="ttname"><a href="imagenES_8h.html#a4b649cc272f02649563791d5ed75b557">EscribirImagenPGM</a></div><div class="ttdeci">bool EscribirImagenPGM(const char *nombre, const unsigned char *datos, const int fils, const int cols)</div><div class="ttdoc">Escribe una imagen de tipo PGM. </div><div class="ttdef"><b>Definition:</b> imagenES.cpp:155</div></div>
+<div class="ttc" id="imagenES_8h_html_a03340a1e1e4a88385c972bb4af463649"><div class="ttname"><a href="imagenES_8h.html#a03340a1e1e4a88385c972bb4af463649">LeerImagenPGM</a></div><div class="ttdeci">unsigned char * LeerImagenPGM(const char *nombre, int &amp;fils, int &amp;cols)</div><div class="ttdoc">Lee una imagen de tipo PGM. </div><div class="ttdef"><b>Definition:</b> imagenES.cpp:117</div></div>
+<div class="ttc" id="imagenES_8h_html_ae149be8653b9f8c7321ac40577e7518c"><div class="ttname"><a href="imagenES_8h.html#ae149be8653b9f8c7321ac40577e7518c">EscribirImagenPPM</a></div><div class="ttdeci">bool EscribirImagenPPM(const char *nombre, const unsigned char *datos, const int fils, const int cols)</div><div class="ttdoc">Escribe una imagen de tipo PPM. </div><div class="ttdef"><b>Definition:</b> imagenES.cpp:138</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

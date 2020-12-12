@@ -1,0 +1,285 @@
+.TH "Imagen" 3 "Lunes, 2 de Noviembre de 2020" "tdaimagen" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Imagen \- T\&.D\&.A\&. \fBImagen\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <imagen\&.h>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBImagen\fP ()"
+.br
+.RI "\fIConstructor por defecto de la clase\&. Crea una imagen vacía\&. \fP"
+.ti -1c
+.RI "\fBImagen\fP (int f, int c)"
+.br
+.RI "\fIConstructor de la clase\&. \fP"
+.ti -1c
+.RI "\fBImagen\fP (const \fBImagen\fP &c)"
+.br
+.RI "\fIConstructor de copias de la clase\&. \fP"
+.ti -1c
+.RI "\fB~Imagen\fP ()"
+.br
+.RI "\fIDestructor de clase\&. Libera los recursos ocupados\&. \fP"
+.ti -1c
+.RI "int \fBnum_filas\fP () const "
+.br
+.RI "\fIFilas\&. \fP"
+.ti -1c
+.RI "int \fBnum_columnas\fP () const "
+.br
+.RI "\fIColumnas\&. \fP"
+.ti -1c
+.RI "void \fBasigna_pixel\fP (int f, int c, unsigned char valor)"
+.br
+.RI "\fIAsigna un pixel a una posicion de la imagen\&. \fP"
+.ti -1c
+.RI "unsigned char \fBconsultar_pixel\fP (int f, int c) const "
+.br
+.RI "\fIDevuelve el pixel en la posicion f y c\&. \fP"
+.ti -1c
+.RI "bool \fBCargarImagen\fP (const char *n)"
+.br
+.RI "\fIcarga la imagen con nombre n \fP"
+.ti -1c
+.RI "bool \fBGuardarImagen\fP (const char *nombre)"
+.br
+.RI "\fIguarda la imagen con nombre n \fP"
+.ti -1c
+.RI "\fBImagen\fP & \fBoperator=\fP (const \fBImagen\fP &I)"
+.br
+.RI "\fIsobrecarga del operador de copia \fP"
+.ti -1c
+.RI "void \fBImprimirImagen\fP ()"
+.br
+.RI "\fISaca por pantalla la matriz imagen\&. \fP"
+.ti -1c
+.RI "void \fBBorrar\fP ()"
+.br
+.RI "\fIBorra el objeto \fBImagen\fP\&. \fP"
+.in -1c
+.SH "Descripción detallada"
+.PP 
+T\&.D\&.A\&. \fBImagen\fP\&. 
+
+Una instancia \fIc\fP de la clase imagen representa una imagen con f filas y c columnas en una matriz de char byte imagen[filas][columnas] dónde cada casilla representa un pixel con valores entre [0,255], siendo 0 negro y 255 blanco
+.PP
+\fBAutor:\fP
+.RS 4
+Gonzalo Medina Medina 
+.RE
+.PP
+\fBFecha:\fP
+.RS 4
+Octubre 2020 
+.RE
+.PP
+
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "Imagen::Imagen (int f, int c)"
+
+.PP
+Constructor de la clase\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIf\fP numero de filas de la imagen 
+.br
+\fIc\fP numero de columnas de la imagen 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Crea el numero racional n/d 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+f y c deben ser mayores que 0 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+la imagen creada contiene valores basura 
+.RE
+.PP
+
+.SS "Imagen::Imagen (const \fBImagen\fP & c)"
+
+.PP
+Constructor de copias de la clase\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIc\fP \fBImagen\fP a copiar 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+la imagen creada contiene valores basura 
+.RE
+.PP
+
+.PP
+Hace referencia a consultar_pixel()\&.
+.SS "Imagen::~Imagen ()"
+
+.PP
+Destructor de clase\&. Libera los recursos ocupados\&. 
+.PP
+\fBPostcondición:\fP
+.RS 4
+No devuelve nada\&. el objeto no puede volver a usarse a no ser que se vuelva a inicializar 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "void Imagen::asigna_pixel (int f, int c, unsigned char valor)"
+
+.PP
+Asigna un pixel a una posicion de la imagen\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIf\fP fila a la que asignar el pixel 
+.br
+\fIc\fP columna a la que asignar el pixel 
+.br
+\fIvalor\fP es un valor entre[0,255] a asignar en el pixel 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+0<f<=filas, 0<c<=columnas, 0<valor<=255 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+No devuelve nada\&. La imagen se modifica\&. 
+.RE
+.PP
+
+.PP
+Referenciado por AumentarContraste(), CargarImagen(), CifrarMensaje(), enmarca_imagen(), Icono_Imagen(), negativo(), umbralizar_automatico(), umbralizar_escala_grises() y zoom()\&.
+.SS "bool Imagen::CargarImagen (const char * n)"
+
+.PP
+carga la imagen con nombre n 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIn\fP nombre del fichero de la imagen 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+devuelve true si se ha cargado bien la imagen, false en cualquier otro caso 
+.RE
+.PP
+
+.PP
+Hace referencia a asigna_pixel(), LeerImagenPGM(), LeerImagenPPM() y LeerTipoImagen()\&.
+.PP
+Referenciado por negativo()\&.
+.SS "unsigned char Imagen::consultar_pixel (int f, int c) const"
+
+.PP
+Devuelve el pixel en la posicion f y c\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIf\fP fila en la que consultar 
+.br
+\fIc\fP columna en la que consultar 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+0<f<=filas, 0<c<=columnas, e imagen[f][c]!=null 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+devuelve unsigned char con el valor de la celda 
+.RE
+.PP
+
+.PP
+Referenciado por AumentarContraste(), CifrarMensaje(), Icono_Imagen(), Imagen(), LeerMensajeCifrado(), negativo(), operator=(), umbralizar_automatico(), umbralizar_escala_grises() y zoom()\&.
+.SS "bool Imagen::GuardarImagen (const char * nombre)"
+
+.PP
+guarda la imagen con nombre n 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fInombre\fP del fichero de la imagen 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+devuelve true si se ha guardado bien la imagen, false en cualquier otro caso 
+.RE
+.PP
+
+.PP
+Hace referencia a EscribirImagenPGM()\&.
+.PP
+Referenciado por negativo()\&.
+.SS "int Imagen::num_columnas () const\fC [inline]\fP"
+
+.PP
+Columnas\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve el numero de columnas de la imagen 
+.RE
+.PP
+
+.PP
+Referenciado por AumentarContraste(), CifrarMensaje(), enmarca_imagen(), Icono_Imagen(), LeerMensajeCifrado(), negativo(), umbralizar_automatico(), umbralizar_escala_grises() y zoom()\&.
+.SS "int Imagen::num_filas () const\fC [inline]\fP"
+
+.PP
+Filas\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve el numero de filas de la imagen 
+.RE
+.PP
+
+.PP
+Referenciado por AumentarContraste(), CifrarMensaje(), enmarca_imagen(), Icono_Imagen(), LeerMensajeCifrado(), negativo(), umbralizar_automatico(), umbralizar_escala_grises() y zoom()\&.
+.SS "\fBImagen\fP & Imagen::operator= (const \fBImagen\fP & I)"
+
+.PP
+sobrecarga del operador de copia 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fII\fP de la imagen a copiar 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+devuelve la dirección de memoria del objeto \fBImagen\fP 
+.RE
+.PP
+
+.PP
+Hace referencia a consultar_pixel()\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para tdaimagen del código fuente\&.

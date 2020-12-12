@@ -1,0 +1,213 @@
+\section{Referencia del Archivo imagen\+E\+S.\+h}
+\label{imagenES_8h}\index{imagen\+E\+S.\+h@{imagen\+E\+S.\+h}}
+\subsection*{Enumeraciones}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bf Tipo\+Imagen} \{ {\bfseries I\+M\+G\+\_\+\+D\+E\+S\+C\+O\+N\+O\+C\+I\+DO}, 
+{\bfseries I\+M\+G\+\_\+\+P\+GM}, 
+{\bfseries I\+M\+G\+\_\+\+P\+PM}
+ \}\begin{DoxyCompactList}\small\item\em Tipo de imagen. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Tipo\+Imagen} {\bf Leer\+Tipo\+Imagen} (const char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em Devuelve el tipo de imagen del archivo. \end{DoxyCompactList}\item 
+unsigned char $\ast$ {\bf Leer\+Imagen\+P\+PM} (const char $\ast$nombre, int \&fils, int \&cols)
+\begin{DoxyCompactList}\small\item\em Lee una imagen de tipo P\+PM. \end{DoxyCompactList}\item 
+bool {\bf Escribir\+Imagen\+P\+PM} (const char $\ast$nombre, const unsigned char $\ast$datos, const int fils, const int cols)
+\begin{DoxyCompactList}\small\item\em Escribe una imagen de tipo P\+PM. \end{DoxyCompactList}\item 
+unsigned char $\ast$ {\bf Leer\+Imagen\+P\+GM} (const char $\ast$nombre, int \&fils, int \&cols)
+\begin{DoxyCompactList}\small\item\em Lee una imagen de tipo P\+GM. \end{DoxyCompactList}\item 
+bool {\bf Escribir\+Imagen\+P\+GM} (const char $\ast$nombre, const unsigned char $\ast$datos, const int fils, const int cols)
+\begin{DoxyCompactList}\small\item\em Escribe una imagen de tipo P\+GM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentaci√≥n de las enumeraciones}
+\index{imagen\+E\+S.\+h@{imagen\+E\+S.\+h}!Tipo\+Imagen@{Tipo\+Imagen}}
+\index{Tipo\+Imagen@{Tipo\+Imagen}!imagen\+E\+S.\+h@{imagen\+E\+S.\+h}}
+\subsubsection[{Tipo\+Imagen}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Tipo\+Imagen}}\label{imagenES_8h_a8914f6544a484741b05c092d9e7522ed}
+
+
+Tipo de imagen. 
+
+Declara una serie de constantes para representar los distintos tipos de im·genes que se pueden manejar.
+
+\begin{DoxySeeAlso}{Ver tambi√©n}
+\doxyref{Leer\+Tipo\+Imagen}{p.}{imagenES_8h_acaa5fb277940aceed29f86c093a3d89c} 
+\end{DoxySeeAlso}
+
+
+\subsection{Documentaci√≥n de las funciones}
+\index{imagen\+E\+S.\+h@{imagen\+E\+S.\+h}!Escribir\+Imagen\+P\+GM@{Escribir\+Imagen\+P\+GM}}
+\index{Escribir\+Imagen\+P\+GM@{Escribir\+Imagen\+P\+GM}!imagen\+E\+S.\+h@{imagen\+E\+S.\+h}}
+\subsubsection[{Escribir\+Imagen\+P\+G\+M(const char $\ast$nombre, const unsigned char $\ast$datos, const int fils, const int cols)}]{\setlength{\rightskip}{0pt plus 5cm}bool Escribir\+Imagen\+P\+GM (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nombre, }
+\item[{const unsigned char $\ast$}]{datos, }
+\item[{const int}]{fils, }
+\item[{const int}]{cols}
+\end{DoxyParamCaption}
+)}\label{imagenES_8h_a4b649cc272f02649563791d5ed75b557}
+
+
+Escribe una imagen de tipo P\+GM. 
+
+
+\begin{DoxyParams}{Par√°metros}
+{\em nombre} & archivo a escribir \\
+\hline
+{\em datos} & punteros a los {\itshape f} x {\itshape c} bytes que corresponden a los valores de los pÌxeles de la imagen de grises. \\
+\hline
+{\em fils} & f filas de la imagen \\
+\hline
+{\em cols} & c columnas de la imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+si ha tenido Èxito en la escritura. 
+\end{DoxyReturn}
+
+
+Referenciado por Imagen\+::\+Guardar\+Imagen().
+
+\index{imagen\+E\+S.\+h@{imagen\+E\+S.\+h}!Escribir\+Imagen\+P\+PM@{Escribir\+Imagen\+P\+PM}}
+\index{Escribir\+Imagen\+P\+PM@{Escribir\+Imagen\+P\+PM}!imagen\+E\+S.\+h@{imagen\+E\+S.\+h}}
+\subsubsection[{Escribir\+Imagen\+P\+P\+M(const char $\ast$nombre, const unsigned char $\ast$datos, const int fils, const int cols)}]{\setlength{\rightskip}{0pt plus 5cm}bool Escribir\+Imagen\+P\+PM (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nombre, }
+\item[{const unsigned char $\ast$}]{datos, }
+\item[{const int}]{fils, }
+\item[{const int}]{cols}
+\end{DoxyParamCaption}
+)}\label{imagenES_8h_ae149be8653b9f8c7321ac40577e7518c}
+
+
+Escribe una imagen de tipo P\+PM. 
+
+
+\begin{DoxyParams}{Par√°metros}
+{\em nombre} & archivo a escribir \\
+\hline
+{\em datos} & punteros a los {\itshape f} x {\itshape c} x 3 bytes que corresponden a los valores de los pÌxeles de la imagen en formato R\+GB. \\
+\hline
+{\em fils} & filas de la imagen \\
+\hline
+{\em cols} & columnas de la imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+si ha tenido Èxito en la escritura. 
+\end{DoxyReturn}
+\index{imagen\+E\+S.\+h@{imagen\+E\+S.\+h}!Leer\+Imagen\+P\+GM@{Leer\+Imagen\+P\+GM}}
+\index{Leer\+Imagen\+P\+GM@{Leer\+Imagen\+P\+GM}!imagen\+E\+S.\+h@{imagen\+E\+S.\+h}}
+\subsubsection[{Leer\+Imagen\+P\+G\+M(const char $\ast$nombre, int \&fils, int \&cols)}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char$\ast$ Leer\+Imagen\+P\+GM (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nombre, }
+\item[{int \&}]{fils, }
+\item[{int \&}]{cols}
+\end{DoxyParamCaption}
+)}\label{imagenES_8h_a03340a1e1e4a88385c972bb4af463649}
+
+
+Lee una imagen de tipo P\+GM. 
+
+
+\begin{DoxyParams}{Par√°metros}
+{\em nombre} & archivo a leer \\
+\hline
+{\em fils} & filas Par·metro de salida con las filas de la imagen. \\
+\hline
+{\em cols} & columnas Par·metro de salida con las columnas de la imagen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+puntero a una nueva zona de memoria que contiene {\itshape filas} x {\itshape columnas} bytes que corresponden a los grises de todos los pÌxeles (desde la esquina superior izqda a la inferior drcha). En caso de que no no se pueda leer, se devuelve cero. (0). 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondici√≥n}
+En caso de Èxito, el puntero apunta a una zona de memoria reservada en memoria din·mica. Ser· el usuario el responsable de liberarla. 
+\end{DoxyPostcond}
+
+
+Hace referencia a Leer\+Cabecera() y Leer\+Tipo().
+
+
+
+Referenciado por Imagen\+::\+Cargar\+Imagen().
+
+\index{imagen\+E\+S.\+h@{imagen\+E\+S.\+h}!Leer\+Imagen\+P\+PM@{Leer\+Imagen\+P\+PM}}
+\index{Leer\+Imagen\+P\+PM@{Leer\+Imagen\+P\+PM}!imagen\+E\+S.\+h@{imagen\+E\+S.\+h}}
+\subsubsection[{Leer\+Imagen\+P\+P\+M(const char $\ast$nombre, int \&fils, int \&cols)}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char$\ast$ Leer\+Imagen\+P\+PM (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nombre, }
+\item[{int \&}]{fils, }
+\item[{int \&}]{cols}
+\end{DoxyParamCaption}
+)}\label{imagenES_8h_a05aea20533de5bbd02789f76aafbb99b}
+
+
+Lee una imagen de tipo P\+PM. 
+
+
+\begin{DoxyParams}{Par√°metros}
+{\em nombre} & archivo a leer \\
+\hline
+{\em fils} & filas Par·metro de salida con las filas de la imagen. \\
+\hline
+{\em cols} & columnas Par·metro de salida con las columnas de la imagen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+puntero a una nueva zona de memoria que contiene {\itshape filas} x {\itshape columnas} x 3 bytes que corresponden a los colores de todos los pÌxeles en formato R\+GB (desde la esquina superior izqda a la inferior drcha). En caso de que no no se pueda leer, se devuelve cero. (0). 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondici√≥n}
+En caso de Èxito, el puntero apunta a una zona de memoria reservada en memoria din·mica. Ser· el usuario el responsable de liberarla. 
+\end{DoxyPostcond}
+
+
+Hace referencia a Leer\+Cabecera() y Leer\+Tipo().
+
+
+
+Referenciado por Imagen\+::\+Cargar\+Imagen().
+
+\index{imagen\+E\+S.\+h@{imagen\+E\+S.\+h}!Leer\+Tipo\+Imagen@{Leer\+Tipo\+Imagen}}
+\index{Leer\+Tipo\+Imagen@{Leer\+Tipo\+Imagen}!imagen\+E\+S.\+h@{imagen\+E\+S.\+h}}
+\subsubsection[{Leer\+Tipo\+Imagen(const char $\ast$nombre)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tipo\+Imagen} Leer\+Tipo\+Imagen (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nombre}
+\end{DoxyParamCaption}
+)}\label{imagenES_8h_acaa5fb277940aceed29f86c093a3d89c}
+
+
+Devuelve el tipo de imagen del archivo. 
+
+
+\begin{DoxyParams}{Par√°metros}
+{\em nombre} & indica el archivo de disco que consultar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el tipo de la imagen en el archivo
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver tambi√©n}
+\doxyref{Tipo\+Imagen}{p.}{imagenES_8h_a8914f6544a484741b05c092d9e7522ed}
+\end{DoxySeeAlso}
+Devuelve el tipo de imagen del archivo.
+
+
+\begin{DoxyParams}{Par√°metros}
+{\em nombre} & a leer el tipo imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Tipo\+Imagen leido 
+\end{DoxyReturn}
+
+
+Hace referencia a Leer\+Tipo().
+
+
+
+Referenciado por Imagen\+::\+Cargar\+Imagen().
+

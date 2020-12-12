@@ -1,0 +1,50 @@
+.TH "src/uso_cola_max.cpp" 3 "Viernes, 13 de Noviembre de 2020" "cola_max" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/uso_cola_max.cpp \- fichero que hace uso del TDA \fBcola_max\fP\&. crea una cola, le inserta 10 elementos, los saca e imprime por pantalla\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include 'cola_max\&.h'\fP
+.br
+
+.SS "Funciones"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &o, const \fBelemento\fP &e)"
+.br
+.RI "\fIsobrecarga del operador de salida << \fP"
+.ti -1c
+.RI "int \fBmain\fP ()"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+fichero que hace uso del TDA \fBcola_max\fP\&. crea una cola, le inserta 10 elementos, los saca e imprime por pantalla\&. 
+
+
+.SH "Documentación de las funciones"
+.PP 
+.SS "ostream& operator<< (ostream & o, const \fBelemento\fP & e)"
+
+.PP
+sobrecarga del operador de salida << 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIo\fP ostream donde almacenaremos los caracteres 
+.br
+\fIe\fP elemento donde consultar valores 
+.RE
+.PP
+
+.PP
+Hace referencia a cola_max::back(), cola_max::poner(), cola_max::quitar() y cola_max::vacia()\&.
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para cola_max del código fuente\&.

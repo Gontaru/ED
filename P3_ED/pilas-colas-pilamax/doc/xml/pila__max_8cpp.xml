@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="pila__max_8cpp" kind="file" language="C++">
+    <compoundname>pila_max.cpp</compoundname>
+    <includes refid="pila__max_8h" local="yes">pila_max.h</includes>
+    <includes refid="pila__max__vd_8cpp" local="yes">pila_max_vd.cpp</includes>
+    <incdepgraph>
+      <node id="55">
+        <label>elemento.h</label>
+        <link refid="elemento_8h_source"/>
+      </node>
+      <node id="49">
+        <label>src/pila_max.cpp</label>
+        <link refid="pila_max.cpp"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>cassert</label>
+      </node>
+      <node id="50">
+        <label>pila_max.h</label>
+        <link refid="pila__max_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>vector</label>
+      </node>
+      <node id="51">
+        <label>pila_max_vd.h</label>
+        <link refid="pila__max__vd_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>iostream</label>
+      </node>
+      <node id="56">
+        <label>pila_max_vd.cpp</label>
+        <link refid="pila__max__vd_8cpp"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="pila__max_8cpp_1a5ee137079c448f8e19ee449bd929fa1e" prot="public" static="no">
+        <name>CUAL_COMPILA</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/pila_max.cpp" line="6" column="10" bodyfile="src/pila_max.cpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>fichero que decide que contenedor se usará para representar una pila (un vector o una cola). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pila__max_8h" kindref="compound">pila_max.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CUAL_COMPILA<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CUAL_COMPILA==1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pila__max__vd_8cpp" kindref="compound">pila_max_vd.cpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>CUAL_COMPILA==2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pila__max__cola_8cpp" kindref="compound">pila_max_cola.cpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/pila_max.cpp"/>
+  </compounddef>
+</doxygen>

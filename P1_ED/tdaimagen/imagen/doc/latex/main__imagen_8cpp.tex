@@ -1,0 +1,338 @@
+\section{Referencia del Archivo main\+\_\+imagen.\+cpp}
+\label{main__imagen_8cpp}\index{main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}}
+
+
+Fichero con definiciones para el tratamiento de imagenes.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$cstring$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}imagen.\+h\char`\"{}}\\*
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf Cifrar\+Mensaje} ({\bf Imagen} \&I)
+\begin{DoxyCompactList}\small\item\em funcion que cifra un mensaje dentro de una imagen \end{DoxyCompactList}\item 
+bool {\bf Leer\+Mensaje\+Cifrado} (const {\bf Imagen} \&I, string \&cadena)
+\begin{DoxyCompactList}\small\item\em funcion que lee un mensaje cifrado en la imagen I \end{DoxyCompactList}\item 
+void {\bf Aumentar\+Contraste} ({\bf Imagen} \&I, int min, int max)
+\begin{DoxyCompactList}\small\item\em funcion aumenta el contraste en la imagen I \end{DoxyCompactList}\item 
+void {\bf umbralizar\+\_\+escala\+\_\+grises} ({\bf Imagen} \&I, int t1, int t2)
+\begin{DoxyCompactList}\small\item\em funcion que umbraliza la imagen I por valores dados \end{DoxyCompactList}\item 
+void {\bf umbralizar\+\_\+automatico} ({\bf Imagen} \&I, int e)
+\begin{DoxyCompactList}\small\item\em funcion que umbraliza automaticamente una imagen I \end{DoxyCompactList}\item 
+void {\bf zoom} ({\bf Imagen} \&I, pair$<$ int, int $>$ ei, int dim)
+\begin{DoxyCompactList}\small\item\em funcion que hace un zoom en una imagen I a partir de la esquina superior izquierda de la imagen y las dimensiones del zoom a hacer \end{DoxyCompactList}\item 
+void {\bf enmarca\+\_\+imagen} ({\bf Imagen} \&I)
+\begin{DoxyCompactList}\small\item\em funcion que crea un marco negro a una imagen \end{DoxyCompactList}\item 
+void {\bf Icono\+\_\+\+Imagen} ({\bf Imagen} \&I)
+\begin{DoxyCompactList}\small\item\em funcion que crea un icono dada una \doxyref{Imagen}{p.}{classImagen} I a partir del numero de veces que sea desea reducir la imagen. \end{DoxyCompactList}\item 
+void {\bf negativo} ({\bf Imagen} \&I)
+\begin{DoxyCompactList}\small\item\em funcion que el negativo de una \doxyref{Imagen}{p.}{classImagen} \end{DoxyCompactList}\item 
+int {\bfseries main} (int argc, char $\ast$argv[$\,$])\label{main__imagen_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Fichero con definiciones para el tratamiento de imagenes. 
+
+Permite realizar operaciones obre las imagene 
+
+\subsection{Documentación de las funciones}
+\index{main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}!Aumentar\+Contraste@{Aumentar\+Contraste}}
+\index{Aumentar\+Contraste@{Aumentar\+Contraste}!main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}}
+\subsubsection[{Aumentar\+Contraste(\+Imagen \&\+I, int min, int max)}]{\setlength{\rightskip}{0pt plus 5cm}void Aumentar\+Contraste (
+\begin{DoxyParamCaption}
+\item[{{\bf Imagen} \&}]{I, }
+\item[{int}]{min, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}\label{main__imagen_8cpp_addc11bf3a0e412893e81e0ce871a85c0}
+
+
+funcion aumenta el contraste en la imagen I 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em I} & imagen a modificar \\
+\hline
+{\em min} & minimo valor de gris para la imagen resultante \\
+\hline
+{\em max} & maximo valor de gris para la imagen resultante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+f y c deben ser mayores que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+pixeles de I modificados 
+\end{DoxyPostcond}
+
+
+Hace referencia a Imagen\+::asigna\+\_\+pixel(), Imagen\+::consultar\+\_\+pixel(), Imagen\+::num\+\_\+columnas() y Imagen\+::num\+\_\+filas().
+
+
+
+Referenciado por negativo().
+
+\index{main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}!Cifrar\+Mensaje@{Cifrar\+Mensaje}}
+\index{Cifrar\+Mensaje@{Cifrar\+Mensaje}!main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}}
+\subsubsection[{Cifrar\+Mensaje(\+Imagen \&\+I)}]{\setlength{\rightskip}{0pt plus 5cm}void Cifrar\+Mensaje (
+\begin{DoxyParamCaption}
+\item[{{\bf Imagen} \&}]{I}
+\end{DoxyParamCaption}
+)}\label{main__imagen_8cpp_a4c54933c97f5ecf9408bc7937db3c16f}
+
+
+funcion que cifra un mensaje dentro de una imagen 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em I} & imagen donde cifraremos el mensaje \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+f y c deben ser mayores que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+I es modificado para alojar el mensaje 
+\end{DoxyPostcond}
+
+
+Hace referencia a Imagen\+::asigna\+\_\+pixel(), Imagen\+::consultar\+\_\+pixel(), Imagen\+::num\+\_\+columnas() y Imagen\+::num\+\_\+filas().
+
+
+
+Referenciado por negativo().
+
+\index{main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}!enmarca\+\_\+imagen@{enmarca\+\_\+imagen}}
+\index{enmarca\+\_\+imagen@{enmarca\+\_\+imagen}!main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}}
+\subsubsection[{enmarca\+\_\+imagen(\+Imagen \&\+I)}]{\setlength{\rightskip}{0pt plus 5cm}void enmarca\+\_\+imagen (
+\begin{DoxyParamCaption}
+\item[{{\bf Imagen} \&}]{I}
+\end{DoxyParamCaption}
+)}\label{main__imagen_8cpp_ac8b8bf38c468a0e2d78e539ce797adf7}
+
+
+funcion que crea un marco negro a una imagen 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em I} & imagen a modificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+f y c deben ser mayores que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+marco negro creado en la \doxyref{Imagen}{p.}{classImagen} I 
+\end{DoxyPostcond}
+
+
+Hace referencia a Imagen\+::asigna\+\_\+pixel(), Imagen\+::num\+\_\+columnas() y Imagen\+::num\+\_\+filas().
+
+
+
+Referenciado por negativo().
+
+\index{main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}!Icono\+\_\+\+Imagen@{Icono\+\_\+\+Imagen}}
+\index{Icono\+\_\+\+Imagen@{Icono\+\_\+\+Imagen}!main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}}
+\subsubsection[{Icono\+\_\+\+Imagen(\+Imagen \&\+I)}]{\setlength{\rightskip}{0pt plus 5cm}void Icono\+\_\+\+Imagen (
+\begin{DoxyParamCaption}
+\item[{{\bf Imagen} \&}]{I}
+\end{DoxyParamCaption}
+)}\label{main__imagen_8cpp_a6fc658a24a0a3b3dc9f1108ce305f31c}
+
+
+funcion que crea un icono dada una \doxyref{Imagen}{p.}{classImagen} I a partir del numero de veces que sea desea reducir la imagen. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em I} & imagen a modificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+f y c deben ser mayores que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+La imagen I es encogida 
+\end{DoxyPostcond}
+
+
+Hace referencia a Imagen\+::asigna\+\_\+pixel(), Imagen\+::consultar\+\_\+pixel(), Imagen\+::num\+\_\+columnas() y Imagen\+::num\+\_\+filas().
+
+
+
+Referenciado por negativo().
+
+\index{main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}!Leer\+Mensaje\+Cifrado@{Leer\+Mensaje\+Cifrado}}
+\index{Leer\+Mensaje\+Cifrado@{Leer\+Mensaje\+Cifrado}!main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}}
+\subsubsection[{Leer\+Mensaje\+Cifrado(const Imagen \&\+I, string \&cadena)}]{\setlength{\rightskip}{0pt plus 5cm}bool Leer\+Mensaje\+Cifrado (
+\begin{DoxyParamCaption}
+\item[{const {\bf Imagen} \&}]{I, }
+\item[{string \&}]{cadena}
+\end{DoxyParamCaption}
+)}\label{main__imagen_8cpp_a232f7d57626743a81aefccc31de93b99}
+
+
+funcion que lee un mensaje cifrado en la imagen I 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em I} & imagen donde buscaremos el mensaje \\
+\hline
+{\em cadena} & string donde guardaremos el mensaje leido \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+f y c deben ser mayores que 0 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Devuelve}
+Devuelve true si se ha leido un mensaje oculto, false en caso contrario 
+\end{DoxyReturn}
+
+
+Hace referencia a Imagen\+::consultar\+\_\+pixel(), Imagen\+::num\+\_\+columnas() y Imagen\+::num\+\_\+filas().
+
+
+
+Referenciado por negativo().
+
+\index{main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}!negativo@{negativo}}
+\index{negativo@{negativo}!main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}}
+\subsubsection[{negativo(\+Imagen \&\+I)}]{\setlength{\rightskip}{0pt plus 5cm}void negativo (
+\begin{DoxyParamCaption}
+\item[{{\bf Imagen} \&}]{I}
+\end{DoxyParamCaption}
+)}\label{main__imagen_8cpp_a48f7e45482eae32adb3c1dad0b54c24e}
+
+
+funcion que el negativo de una \doxyref{Imagen}{p.}{classImagen} 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em I} & imagen a modificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+f y c deben ser mayores que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+La imagen I es encogida 
+\end{DoxyPostcond}
+
+
+Hace referencia a Imagen\+::asigna\+\_\+pixel(), Aumentar\+Contraste(), Imagen\+::\+Cargar\+Imagen(), Cifrar\+Mensaje(), Imagen\+::consultar\+\_\+pixel(), enmarca\+\_\+imagen(), Imagen\+::\+Guardar\+Imagen(), Icono\+\_\+\+Imagen(), Leer\+Mensaje\+Cifrado(), Imagen\+::num\+\_\+columnas(), Imagen\+::num\+\_\+filas(), umbralizar\+\_\+automatico(), umbralizar\+\_\+escala\+\_\+grises() y zoom().
+
+\index{main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}!umbralizar\+\_\+automatico@{umbralizar\+\_\+automatico}}
+\index{umbralizar\+\_\+automatico@{umbralizar\+\_\+automatico}!main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}}
+\subsubsection[{umbralizar\+\_\+automatico(\+Imagen \&\+I, int e)}]{\setlength{\rightskip}{0pt plus 5cm}void umbralizar\+\_\+automatico (
+\begin{DoxyParamCaption}
+\item[{{\bf Imagen} \&}]{I, }
+\item[{int}]{e}
+\end{DoxyParamCaption}
+)}\label{main__imagen_8cpp_adb304edc487e23771b1cfa46adee496e}
+
+
+funcion que umbraliza automaticamente una imagen I 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em I} & imagen a modificar \\
+\hline
+{\em e} & valor pequeño que condiciona el umbral calculado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+f y c deben ser mayores que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+pixeles de I modificados 
+\end{DoxyPostcond}
+
+
+Hace referencia a Imagen\+::asigna\+\_\+pixel(), Imagen\+::consultar\+\_\+pixel(), Imagen\+::num\+\_\+columnas() y Imagen\+::num\+\_\+filas().
+
+
+
+Referenciado por negativo().
+
+\index{main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}!umbralizar\+\_\+escala\+\_\+grises@{umbralizar\+\_\+escala\+\_\+grises}}
+\index{umbralizar\+\_\+escala\+\_\+grises@{umbralizar\+\_\+escala\+\_\+grises}!main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}}
+\subsubsection[{umbralizar\+\_\+escala\+\_\+grises(\+Imagen \&\+I, int t1, int t2)}]{\setlength{\rightskip}{0pt plus 5cm}void umbralizar\+\_\+escala\+\_\+grises (
+\begin{DoxyParamCaption}
+\item[{{\bf Imagen} \&}]{I, }
+\item[{int}]{t1, }
+\item[{int}]{t2}
+\end{DoxyParamCaption}
+)}\label{main__imagen_8cpp_ac48969cfe0b7054b9377ebd33456bd7c}
+
+
+funcion que umbraliza la imagen I por valores dados 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em I} & imagen a modificar \\
+\hline
+{\em t1} & rango minimo del umbral \\
+\hline
+{\em t2} & rango maximo del umbral \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+f y c deben ser mayores que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+pixeles de I modificados 
+\end{DoxyPostcond}
+
+
+Hace referencia a Imagen\+::asigna\+\_\+pixel(), Imagen\+::consultar\+\_\+pixel(), Imagen\+::num\+\_\+columnas() y Imagen\+::num\+\_\+filas().
+
+
+
+Referenciado por negativo().
+
+\index{main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}!zoom@{zoom}}
+\index{zoom@{zoom}!main\+\_\+imagen.\+cpp@{main\+\_\+imagen.\+cpp}}
+\subsubsection[{zoom(\+Imagen \&\+I, pair$<$ int, int $>$ ei, int dim)}]{\setlength{\rightskip}{0pt plus 5cm}void zoom (
+\begin{DoxyParamCaption}
+\item[{{\bf Imagen} \&}]{I, }
+\item[{pair$<$ int, int $>$}]{ei, }
+\item[{int}]{dim}
+\end{DoxyParamCaption}
+)}\label{main__imagen_8cpp_a69d82b7373e4ef46f32a4dde37658a2e}
+
+
+funcion que hace un zoom en una imagen I a partir de la esquina superior izquierda de la imagen y las dimensiones del zoom a hacer 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em I} & imagen a modificar \\
+\hline
+{\em ei} & par de coordenadas que determinan la esquina superior izquierda de la nueva imagen en la imagen actual. \\
+\hline
+{\em dim} & dimension dim\+Xdim del zoom a realizar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+f y c deben ser mayores que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+pixeles de I modificados 
+\end{DoxyPostcond}
+
+
+Hace referencia a Imagen\+::asigna\+\_\+pixel(), Imagen\+::consultar\+\_\+pixel(), Imagen\+::num\+\_\+columnas() y Imagen\+::num\+\_\+filas().
+
+
+
+Referenciado por negativo().
+

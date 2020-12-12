@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classPila__max" kind="class" language="C++" prot="public">
+    <compoundname>Pila_max</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPila__max_1ab2c443e6d71a920170c0f76e55645646" prot="private" static="no" mutable="no">
+        <type><ref refid="classCola" kindref="compound">Cola</ref>&lt; <ref refid="structelemento" kindref="compound">elemento</ref> &gt;</type>
+        <definition>Cola&lt;elemento&gt; Pila_max::mipila</definition>
+        <argsstring></argsstring>
+        <name>mipila</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pila_max_cola.h" line="22" column="1" bodyfile="include/pila_max_cola.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPila__max_1a61bc73928c6b0696adf5a0b7bf792606" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="structelemento" kindref="compound">elemento</ref> &gt;</type>
+        <definition>vector&lt;elemento&gt; Pila_max::mipila</definition>
+        <argsstring></argsstring>
+        <name>mipila</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pila_max_vd.h" line="20" column="1" bodyfile="include/pila_max_vd.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPila__max_1aa1d810ed1cbc8d68f8526179be48e705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structelemento" kindref="compound">elemento</ref></type>
+        <definition>const elemento Pila_max::tope</definition>
+        <argsstring>()</argsstring>
+        <name>tope</name>
+        <briefdescription>
+<para>Método que devuelve el tope de la pila. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>elemento objeto elemento tope de la pila </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pila_max_cola.h" line="29" column="1" bodyfile="src/pila_max_cola.cpp" bodystart="10" bodyend="19"/>
+        <references refid="classCola_1a1df4ad2b50116ef22e77ad3f77b02d29" compoundref="cola_8h" startline="98" endline="101">Cola&lt; T &gt;::frente</references>
+        <references refid="classCola_1a320766ddc7020424052c99e5c82a105d" compoundref="src_2cola_8cpp" startline="87" endline="95">Cola&lt; T &gt;::quitar</references>
+        <references refid="classPila__max_1a8441806b8bb54cd9a9d426e834179e5b" compoundref="pila__max__cola_8cpp" startline="46" endline="48">size</references>
+        <referencedby refid="classPila__max_1a48579ac204c790d33c1f5206b1e4eef7" compoundref="pila__max__cola_8cpp" startline="30" endline="39">poner</referencedby>
+        <referencedby refid="classPila__max_1a591d803615d92722dc5d842d857e68f2" compoundref="pila__max__vd_8cpp" startline="11" endline="17">tope</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1ac4615eccf7d95bf4433e3da16c9aa2a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pila_max::quitar</definition>
+        <argsstring>()</argsstring>
+        <name>quitar</name>
+        <briefdescription>
+<para>Método que quita el elemento del tope de la pila (igual que pop()) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pila_max_cola.h" line="33" column="1" bodyfile="src/pila_max_cola.cpp" bodystart="20" bodyend="28"/>
+        <references refid="classCola_1aa8654a248be63133bacdc2e0e102f814" compoundref="cola_8h" startline="121" endline="123">Cola&lt; T &gt;::num_elementos</references>
+        <references refid="classCola_1a4a902e5805ae74f8d80c6f3267fd14c4" compoundref="src_2cola_8cpp" startline="73" endline="82">Cola&lt; T &gt;::poner</references>
+        <references refid="classCola_1a1df4ad2b50116ef22e77ad3f77b02d29" compoundref="cola_8h" startline="98" endline="101">Cola&lt; T &gt;::frente</references>
+        <references refid="classCola_1a320766ddc7020424052c99e5c82a105d" compoundref="src_2cola_8cpp" startline="87" endline="95">Cola&lt; T &gt;::quitar</references>
+        <referencedby refid="classPila__max_1a591d803615d92722dc5d842d857e68f2" compoundref="pila__max__vd_8cpp" startline="11" endline="17">tope</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1a48579ac204c790d33c1f5206b1e4eef7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pila_max::poner</definition>
+        <argsstring>(int e)</argsstring>
+        <name>poner</name>
+        <param>
+          <type>int</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Método que añade un elemento con valor e por el tope de la pila. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valor que tendrá el elemento a añadir </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pila_max_cola.h" line="38" column="1" bodyfile="src/pila_max_cola.cpp" bodystart="30" bodyend="39"/>
+        <references refid="classCola_1a4a902e5805ae74f8d80c6f3267fd14c4" compoundref="src_2cola_8cpp" startline="73" endline="82">Cola&lt; T &gt;::poner</references>
+        <references refid="classPila__max_1aa1d810ed1cbc8d68f8526179be48e705" compoundref="pila__max__cola_8cpp" startline="10" endline="19">tope</references>
+        <references refid="classCola_1a63d527f52e207cd6783f12df481ad175" compoundref="cola_8h" startline="92" endline="94">Cola&lt; T &gt;::vacia</references>
+        <referencedby refid="classPila__max_1a591d803615d92722dc5d842d857e68f2" compoundref="pila__max__vd_8cpp" startline="11" endline="17">tope</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1ab113c1ce4807788128d30b0dbe8c80f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Pila_max::vacia</definition>
+        <argsstring>() const </argsstring>
+        <name>vacia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pila_max_cola.h" line="43" column="1" bodyfile="src/pila_max_cola.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1a8441806b8bb54cd9a9d426e834179e5b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Pila_max::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Método que devuelve el tamaño de la pila. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>número de elementos de la pila </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pila_max_cola.h" line="48" column="1" bodyfile="src/pila_max_cola.cpp" bodystart="46" bodyend="48"/>
+        <references refid="classCola_1aa8654a248be63133bacdc2e0e102f814" compoundref="cola_8h" startline="121" endline="123">Cola&lt; T &gt;::num_elementos</references>
+        <referencedby refid="classPila__max_1aa1d810ed1cbc8d68f8526179be48e705" compoundref="pila__max__cola_8cpp" startline="10" endline="19">tope</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1a591d803615d92722dc5d842d857e68f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structelemento" kindref="compound">elemento</ref></type>
+        <definition>elemento Pila_max::tope</definition>
+        <argsstring>() const </argsstring>
+        <name>tope</name>
+        <briefdescription>
+<para>Método que devuelve el tope de la pila. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>elemento objeto elemento tope de la pila </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pila_max_vd.h" line="27" column="1" bodyfile="src/pila_max_vd.cpp" bodystart="11" bodyend="17"/>
+        <references refid="classPila__max_1a48579ac204c790d33c1f5206b1e4eef7" compoundref="pila__max__cola_8cpp" startline="30" endline="39">poner</references>
+        <references refid="classPila__max_1ac4615eccf7d95bf4433e3da16c9aa2a2" compoundref="pila__max__cola_8cpp" startline="20" endline="28">quitar</references>
+        <references refid="classPila__max_1a8441806b8bb54cd9a9d426e834179e5b" compoundref="pila__max__cola_8cpp" startline="46" endline="48">size</references>
+        <references refid="classPila__max_1aa1d810ed1cbc8d68f8526179be48e705" compoundref="pila__max__cola_8cpp" startline="10" endline="19">tope</references>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1ac4615eccf7d95bf4433e3da16c9aa2a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pila_max::quitar</definition>
+        <argsstring>()</argsstring>
+        <name>quitar</name>
+        <briefdescription>
+<para>Método que quita el elemento del tope de la pila (igual que pop()) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pila_max_vd.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1a48579ac204c790d33c1f5206b1e4eef7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pila_max::poner</definition>
+        <argsstring>(int e)</argsstring>
+        <name>poner</name>
+        <param>
+          <type>int</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Método que añade un elemento con valor e por el tope de la pila. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valor que tendrá el elemento a añadir </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pila_max_vd.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1ab113c1ce4807788128d30b0dbe8c80f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Pila_max::vacia</definition>
+        <argsstring>() const </argsstring>
+        <name>vacia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pila_max_vd.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1a8441806b8bb54cd9a9d426e834179e5b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Pila_max::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Método que devuelve el tamaño de la pila. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>número de elementos de la pila </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pila_max_vd.h" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/pila_max_cola.h" line="18" column="1" bodyfile="include/pila_max_cola.h" bodystart="18" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classPila__max_1ab2c443e6d71a920170c0f76e55645646" prot="private" virt="non-virtual"><scope>Pila_max</scope><name>mipila</name></member>
+      <member refid="classPila__max_1a61bc73928c6b0696adf5a0b7bf792606" prot="private" virt="non-virtual"><scope>Pila_max</scope><name>mipila</name></member>
+      <member refid="classPila__max_1a48579ac204c790d33c1f5206b1e4eef7" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>poner</name></member>
+      <member refid="classPila__max_1a48579ac204c790d33c1f5206b1e4eef7" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>poner</name></member>
+      <member refid="classPila__max_1ac4615eccf7d95bf4433e3da16c9aa2a2" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>quitar</name></member>
+      <member refid="classPila__max_1ac4615eccf7d95bf4433e3da16c9aa2a2" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>quitar</name></member>
+      <member refid="classPila__max_1a8441806b8bb54cd9a9d426e834179e5b" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>size</name></member>
+      <member refid="classPila__max_1a8441806b8bb54cd9a9d426e834179e5b" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>size</name></member>
+      <member refid="classPila__max_1aa1d810ed1cbc8d68f8526179be48e705" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>tope</name></member>
+      <member refid="classPila__max_1a591d803615d92722dc5d842d857e68f2" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>tope</name></member>
+      <member refid="classPila__max_1ab113c1ce4807788128d30b0dbe8c80f4" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>vacia</name></member>
+      <member refid="classPila__max_1ab113c1ce4807788128d30b0dbe8c80f4" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>vacia</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

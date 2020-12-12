@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="include_2cola_8cpp">cola.cpp</innerfile>
+    <innerfile refid="cola_8h">cola.h</innerfile>
+    <innerfile refid="elemento_8h">elemento.h</innerfile>
+    <innerfile refid="pila__max_8h">pila_max.h</innerfile>
+    <innerfile refid="pila__max__cola_8h">pila_max_cola.h</innerfile>
+    <innerfile refid="pila__max__vd_8h">pila_max_vd.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/"/>
+  </compounddef>
+</doxygen>

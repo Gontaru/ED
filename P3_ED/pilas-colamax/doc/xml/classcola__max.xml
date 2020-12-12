@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classcola__max" kind="class" language="C++" prot="public">
+    <compoundname>cola_max</compoundname>
+    <includes refid="cola__max_8h" local="no">cola_max.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcola__max_1ad7f99d057b070eb04595701f337e5e1d" prot="private" static="no" mutable="no">
+        <type>stack&lt; <ref refid="structelemento" kindref="compound">elemento</ref> &gt;</type>
+        <definition>stack&lt;elemento&gt; cola_max::mipila1</definition>
+        <argsstring></argsstring>
+        <name>mipila1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cola_max.h" line="50" column="1" bodyfile="include/cola_max.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcola__max_1acdb89cf7de2e98a80ff8da450984762c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structelemento" kindref="compound">elemento</ref></type>
+        <definition>const elemento cola_max::front</definition>
+        <argsstring>()</argsstring>
+        <name>front</name>
+        <briefdescription>
+<para>Método que devuelve el primer elemento de la cola. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>objeto constante de tipo elemento </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cola_max.h" line="58" column="1" bodyfile="src/cola_max.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classcola__max_1aea76788834703f74d5f70e3e1af92965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structelemento" kindref="compound">elemento</ref></type>
+        <definition>const elemento cola_max::back</definition>
+        <argsstring>()</argsstring>
+        <name>back</name>
+        <briefdescription>
+<para>Método que devuelve el último elemento de la cola. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>objeto constante de tipo elemento </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cola_max.h" line="63" column="1" bodyfile="src/cola_max.cpp" bodystart="14" bodyend="20"/>
+        <referencedby refid="uso__cola__max_8cpp_1ab777891f7cce55c9b1b8af238079b62f" compoundref="uso__cola__max_8cpp" startline="16" endline="20">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcola__max_1a08669c970f917d3a711f3faf2709ca8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cola_max::quitar</definition>
+        <argsstring>()</argsstring>
+        <name>quitar</name>
+        <briefdescription>
+<para>Método que quita el último elemento de la cola. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cola_max.h" line="67" column="1" bodyfile="src/cola_max.cpp" bodystart="22" bodyend="38"/>
+        <referencedby refid="uso__cola__max_8cpp_1ab777891f7cce55c9b1b8af238079b62f" compoundref="uso__cola__max_8cpp" startline="16" endline="20">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcola__max_1afbe1d4a6aa1d2f5c8916a449e75aea47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cola_max::poner</definition>
+        <argsstring>(int e)</argsstring>
+        <name>poner</name>
+        <param>
+          <type>int</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Método que añade un elemento con valor e al principio de la cola. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cola_max.h" line="71" column="1" bodyfile="src/cola_max.cpp" bodystart="40" bodyend="50"/>
+        <references refid="classcola__max_1afcd482b45baa3a34584d1832b481d52e" compoundref="cola__max_8cpp" startline="53" endline="56">vacia</references>
+        <referencedby refid="uso__cola__max_8cpp_1ab777891f7cce55c9b1b8af238079b62f" compoundref="uso__cola__max_8cpp" startline="16" endline="20">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcola__max_1afcd482b45baa3a34584d1832b481d52e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cola_max::vacia</definition>
+        <argsstring>() const </argsstring>
+        <name>vacia</name>
+        <briefdescription>
+<para>Método que comprueba si la cola está vacía. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true si está vacía, de lo contrario false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cola_max.h" line="76" column="1" bodyfile="src/cola_max.cpp" bodystart="53" bodyend="56"/>
+        <referencedby refid="uso__cola__max_8cpp_1ab777891f7cce55c9b1b8af238079b62f" compoundref="uso__cola__max_8cpp" startline="16" endline="20">operator&lt;&lt;</referencedby>
+        <referencedby refid="classcola__max_1afbe1d4a6aa1d2f5c8916a449e75aea47" compoundref="cola__max_8cpp" startline="40" endline="50">poner</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcola__max_1a19ae10461acc07bbc7b035de4e137ccb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cola_max::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Método que devuelve el número de elementos de la cola. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>número de elementos de la cola </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cola_max.h" line="81" column="1" bodyfile="src/cola_max.cpp" bodystart="57" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>clase <ref refid="classcola__max" kindref="compound">cola_max</ref> que representa una cola que guarda el valor máximo añadido </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/cola_max.h" line="46" column="1" bodyfile="include/cola_max.h" bodystart="46" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classcola__max_1aea76788834703f74d5f70e3e1af92965" prot="public" virt="non-virtual"><scope>cola_max</scope><name>back</name></member>
+      <member refid="classcola__max_1acdb89cf7de2e98a80ff8da450984762c" prot="public" virt="non-virtual"><scope>cola_max</scope><name>front</name></member>
+      <member refid="classcola__max_1ad7f99d057b070eb04595701f337e5e1d" prot="private" virt="non-virtual"><scope>cola_max</scope><name>mipila1</name></member>
+      <member refid="classcola__max_1afbe1d4a6aa1d2f5c8916a449e75aea47" prot="public" virt="non-virtual"><scope>cola_max</scope><name>poner</name></member>
+      <member refid="classcola__max_1a08669c970f917d3a711f3faf2709ca8d" prot="public" virt="non-virtual"><scope>cola_max</scope><name>quitar</name></member>
+      <member refid="classcola__max_1a19ae10461acc07bbc7b035de4e137ccb" prot="public" virt="non-virtual"><scope>cola_max</scope><name>size</name></member>
+      <member refid="classcola__max_1afcd482b45baa3a34584d1832b481d52e" prot="public" virt="non-virtual"><scope>cola_max</scope><name>vacia</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
