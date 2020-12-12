@@ -1,0 +1,20 @@
+
+Juego 3 en raya
+
+Instalación:
+
+Para obtener el ejecutable sólo debe situarse dentro de la carpeta 3enRaya mediante la consola y ejecutar el Makefile con la instrucción 'make all'.
+
+Puede borrar todos los ficheros de enlazado y el ejecutable con 'make clean'
+
+Para ejecutarlo sólo debe introducir './bin/Juego3enRaya'
+
+Instrucciones:
+
+Sólo se admiten los caracteres 'o', 'O', 'x, y 'X' para establecer la ficha deseada.
+
+Pueden jugar dos personas, una persona contra la máquina o dos máquinas.
+
+a la hora de introducir la fila y la columna deseada para poner una ficha la primera columna y fila empiezan a contar en 1.
+
+
