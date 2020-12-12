@@ -1,0 +1,537 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classGuia__Tlf" kind="class" language="C++" prot="public">
+    <compoundname>Guia_Tlf</compoundname>
+    <includes refid="guiatlf_8h" local="no">guiatlf.h</includes>
+    <innerclass refid="classGuia__Tlf_1_1const__iterator" prot="public">Guia_Tlf::const_iterator</innerclass>
+    <innerclass refid="classGuia__Tlf_1_1iterator" prot="public">Guia_Tlf::iterator</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGuia__Tlf_1ad53814dae53b4f64ed7152c21477cade" prot="private" static="no" mutable="no">
+        <type>map&lt; string, list&lt; string &gt; &gt;</type>
+        <definition>map&lt;string, list&lt;string&gt; &gt; Guia_Tlf::datos</definition>
+        <argsstring></argsstring>
+        <name>datos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="62" column="1" bodyfile="include/guiatlf.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGuia__Tlf_1a2959772b25b0871e27889d02a6a917c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>list&lt; string &gt; &amp;</type>
+        <definition>list&lt;string&gt;&amp; Guia_Tlf::operator[]</definition>
+        <argsstring>(const string &amp;nombre)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>Acceso a un elemento. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del elemento elemento acceder </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>devuelve el valor asociado a un nombre, es decir el teléfono </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="74" column="1" bodyfile="include/guiatlf.h" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1a10662395b20eed0d83ec9119f684e17f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>list&lt; string &gt;</type>
+        <definition>list&lt;string&gt; Guia_Tlf::gettelefono</definition>
+        <argsstring>(const string &amp;nombre)</argsstring>
+        <name>gettelefono</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="79" column="1" bodyfile="include/guiatlf.h" bodystart="79" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1ae55a42b80111e9bf9bb051514fbe6d6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pair&lt; map&lt; string, list&lt; string &gt; &gt;::<ref refid="classGuia__Tlf_1_1iterator" kindref="compound">iterator</ref>, bool &gt;</type>
+        <definition>pair&lt;map&lt;string, list&lt;string&gt; &gt;::iterator,bool&gt; Guia_Tlf::insert</definition>
+        <argsstring>(string nombre, string tlf)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>string</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>tlf</declname>
+        </param>
+        <briefdescription>
+<para>Insert un nuevo telefono. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre clave del nuevo telefono </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tlf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero de telefono </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: un pair donde first apunta al nuevo elemento insertado y bool es true si se ha insertado el nuevo tlf o o false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="93" column="1" bodyfile="include/guiatlf.h" bodystart="93" bodyend="115"/>
+        <referencedby refid="classGuia__Tlf_1a3e0b08a1985d3c72853690730319172f" compoundref="guiatlf_8h" startline="230" endline="250">operator+</referencedby>
+        <referencedby refid="classGuia__Tlf_1ac709b1fb7e2c04f58f660fefab6b5a3d" compoundref="guiatlf_8h" startline="281" endline="309">operator^</referencedby>
+        <referencedby refid="classGuia__Tlf_1a87f4cbea4ba03c3a70178bb5358cda51" compoundref="guiatlf_8h" startline="321" endline="332">previos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1aa2893a511b0adb23ff8fe95162fa186d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pair&lt; map&lt; string, list&lt; string &gt; &gt;::<ref refid="classGuia__Tlf_1_1iterator" kindref="compound">iterator</ref>, bool &gt;</type>
+        <definition>pair&lt;map&lt;string, list&lt;string&gt; &gt;::iterator,bool&gt; Guia_Tlf::insert</definition>
+        <argsstring>(pair&lt; string, list&lt; string &gt; &gt; p)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>pair&lt; string, list&lt; string &gt; &gt;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Insert un nuevo telefono. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pair con el nombre y el telefono asociado</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: un pair donde first apunta al nuevo elemento insertado y bool es true si se ha insertado el nuevo tlf o o false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="124" column="1" bodyfile="include/guiatlf.h" bodystart="124" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1a07860c300a55d62ca00a680668297752" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pair&lt; map&lt; string, list&lt; string &gt; &gt;::<ref refid="classGuia__Tlf_1_1iterator" kindref="compound">iterator</ref>, bool &gt;</type>
+        <definition>pair&lt;map&lt;string, list&lt;string&gt; &gt;::iterator,bool&gt; Guia_Tlf::insert</definition>
+        <argsstring>(pair&lt; string, string &gt; p)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>pair&lt; string, string &gt;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Insert un nuevo telefono. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pair con el nombre y el telefono asociado</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: un pair donde first apunta al nuevo elemento insertado y bool es true si se ha insertado el nuevo tlf o o false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="141" column="1" bodyfile="include/guiatlf.h" bodystart="141" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1a57e32bbc9e76567d22e5275d4d2a6515" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Guia_Tlf::borrar</definition>
+        <argsstring>(const string &amp;nombre)</argsstring>
+        <name>borrar</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>Borrar un telefono. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre que se quiere borrar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>: en caso de que fuese un multimap borraria todos con ese nombre </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="172" column="1" bodyfile="include/guiatlf.h" bodystart="172" bodyend="178"/>
+        <referencedby refid="classGuia__Tlf_1ac381d53f275ce769830e07fbc56902b0" compoundref="guiatlf_8h" startline="257" endline="275">operator-</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1af8adac24fd35985b9016a4a38cca60f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Guia_Tlf::borrar</definition>
+        <argsstring>(const string &amp;nombre, const string &amp;tlf)</argsstring>
+        <name>borrar</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>tlf</declname>
+        </param>
+        <briefdescription>
+<para>Borrar un telefono. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre que se quiere borrar y telefono asociado </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>: esta funcion nos permite borrar solamente aquel que coincida en nombre y tlf </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="186" column="1" bodyfile="include/guiatlf.h" bodystart="186" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1a081c98f65dce5a08a2e032446b6c4931" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Guia_Tlf::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Numero de telefonos. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>el numero de telefonos asociados </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="205" column="1" bodyfile="include/guiatlf.h" bodystart="205" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1aa63213524c6339ea89baae2b5d2ebb69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Guia_Tlf::contabiliza</definition>
+        <argsstring>(const string &amp;nombre)</argsstring>
+        <name>contabiliza</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>Contabiliza cuantos telefonos tenemos asociados a un nombre. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre sobre el que queremos consultar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>numero de telefonos asociados a un nombre </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="215" column="1" bodyfile="include/guiatlf.h" bodystart="215" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1a36ac970ece51a62763bb3898159d0047" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Guia_Tlf::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Limpia la guia. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="222" column="1" bodyfile="include/guiatlf.h" bodystart="222" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1a3e0b08a1985d3c72853690730319172f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGuia__Tlf" kindref="compound">Guia_Tlf</ref></type>
+        <definition>Guia_Tlf Guia_Tlf::operator+</definition>
+        <argsstring>(const Guia_Tlf &amp;g)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classGuia__Tlf" kindref="compound">Guia_Tlf</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+<para>Union de guias de telefonos. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>guia que se une </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: una nueva guia resultado de unir el objeto al que apunta this y g </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="230" column="1" bodyfile="include/guiatlf.h" bodystart="230" bodyend="250"/>
+        <references refid="classGuia__Tlf_1ae55a42b80111e9bf9bb051514fbe6d6f" compoundref="guiatlf_8h" startline="93" endline="115">insert</references>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1ac381d53f275ce769830e07fbc56902b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGuia__Tlf" kindref="compound">Guia_Tlf</ref></type>
+        <definition>Guia_Tlf Guia_Tlf::operator-</definition>
+        <argsstring>(const Guia_Tlf &amp;g)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classGuia__Tlf" kindref="compound">Guia_Tlf</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+<para>Diferencia de guias de telefonos. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>guia a restar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: una nueva guia resultado de la diferencia del objeto al que apunta this y g </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="257" column="1" bodyfile="include/guiatlf.h" bodystart="257" bodyend="275"/>
+        <references refid="classGuia__Tlf_1a57e32bbc9e76567d22e5275d4d2a6515" compoundref="guiatlf_8h" startline="172" endline="178">borrar</references>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1ac709b1fb7e2c04f58f660fefab6b5a3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGuia__Tlf" kindref="compound">Guia_Tlf</ref></type>
+        <definition>Guia_Tlf Guia_Tlf::operator^</definition>
+        <argsstring>(const Guia_Tlf &amp;g)</argsstring>
+        <name>operator^</name>
+        <param>
+          <type>const <ref refid="classGuia__Tlf" kindref="compound">Guia_Tlf</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+<para>Intersección de guías de teléfonos. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>guia a restar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: una nueva guia resultado de la intersección del objeto al que apunta this y g </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="281" column="1" bodyfile="include/guiatlf.h" bodystart="281" bodyend="309"/>
+        <references refid="classGuia__Tlf_1ae55a42b80111e9bf9bb051514fbe6d6f" compoundref="guiatlf_8h" startline="93" endline="115">insert</references>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1a87f4cbea4ba03c3a70178bb5358cda51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGuia__Tlf" kindref="compound">Guia_Tlf</ref></type>
+        <definition>Guia_Tlf Guia_Tlf::previos</definition>
+        <argsstring>(const string &amp;nombre)</argsstring>
+        <name>previos</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>Obtiene una guia con los nombre previos a uno dado. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre delimitador </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>nueva guia sin nombres mayores que <emphasis>nombre</emphasis> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="321" column="1" bodyfile="include/guiatlf.h" bodystart="321" bodyend="332"/>
+        <references refid="classGuia__Tlf_1ae55a42b80111e9bf9bb051514fbe6d6f" compoundref="guiatlf_8h" startline="93" endline="115">insert</references>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1a0a0f50f45b96349e005d7457a0c05574" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGuia__Tlf_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator Guia_Tlf::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Inicializa un iterator al comienzo de la guia. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="456" column="1" bodyfile="include/guiatlf.h" bodystart="456" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1a91777ba1c5e206259943af1eae5aa305" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGuia__Tlf_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator Guia_Tlf::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Inicializa un iterator al final de la guia. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="465" column="1" bodyfile="include/guiatlf.h" bodystart="465" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1a234fca5546ac8077214ac7a2f462850a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGuia__Tlf_1_1const__iterator" kindref="compound">const_iterator</ref></type>
+        <definition>const_iterator Guia_Tlf::begin</definition>
+        <argsstring>() const </argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Inicializa un iterator al comienzo de la guia. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="476" column="1" bodyfile="include/guiatlf.h" bodystart="476" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classGuia__Tlf_1a7f87e18af3b8a7d7b542342c0318c33e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGuia__Tlf_1_1const__iterator" kindref="compound">const_iterator</ref></type>
+        <definition>const_iterator Guia_Tlf::end</definition>
+        <argsstring>() const </argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Inicializa un iterator al final de la guia. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="485" column="1" bodyfile="include/guiatlf.h" bodystart="485" bodyend="490"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classGuia__Tlf_1a73eb02557f3118999710c66aa9ecf309" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, Guia_Tlf &amp;g)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classGuia__Tlf" kindref="compound">Guia_Tlf</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+<para>Escritura de la guia de telefonos. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo de salida. Es MODIFICADO </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>guia de telefonos que se escribe </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>el flujo de salida </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="343" column="1" bodyfile="include/guiatlf.h" bodystart="343" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="friend" id="classGuia__Tlf_1ac15a5b0c2eb7d5b1843f11beb492495e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend istream &amp;</type>
+        <definition>istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, Guia_Tlf &amp;g)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="classGuia__Tlf" kindref="compound">Guia_Tlf</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+<para>Lectura de la guia de telefonos. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flujo de entrada. ES MODIFICADO </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>guia de telefonos. ES MODIFICADO </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>el flujo de entrada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/guiatlf.h" line="363" column="1" bodyfile="include/guiatlf.h" bodystart="363" bodyend="372"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A. <ref refid="classGuia__Tlf" kindref="compound">Guia_Tlf</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>c</emphasis> del tipo de datos abstracto <computeroutput><ref refid="classGuia__Tlf" kindref="compound">Guia_Tlf</ref></computeroutput> es un objeto formado por una colección de pares {(e11,e21),(e12,e22),(e13,e23),...,(e1n-1,e2n-1)} ordenados por la el primer elemento del par denominado clave o key. No existen elementos repetidos.</para><para>Un ejemplo de su uso:</para><para><simplesect kind="author"><para>Rosa Rodríguez </para></simplesect>
+<simplesect kind="date"><para>Marzo 2012 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="include/guiatlf.h" line="45" column="1" bodyfile="include/guiatlf.h" bodystart="45" bodyend="495"/>
+    <listofallmembers>
+      <member refid="classGuia__Tlf_1a0a0f50f45b96349e005d7457a0c05574" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>begin</name></member>
+      <member refid="classGuia__Tlf_1a234fca5546ac8077214ac7a2f462850a" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>begin</name></member>
+      <member refid="classGuia__Tlf_1a57e32bbc9e76567d22e5275d4d2a6515" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>borrar</name></member>
+      <member refid="classGuia__Tlf_1af8adac24fd35985b9016a4a38cca60f4" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>borrar</name></member>
+      <member refid="classGuia__Tlf_1a36ac970ece51a62763bb3898159d0047" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>clear</name></member>
+      <member refid="classGuia__Tlf_1aa63213524c6339ea89baae2b5d2ebb69" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>contabiliza</name></member>
+      <member refid="classGuia__Tlf_1ad53814dae53b4f64ed7152c21477cade" prot="private" virt="non-virtual"><scope>Guia_Tlf</scope><name>datos</name></member>
+      <member refid="classGuia__Tlf_1a91777ba1c5e206259943af1eae5aa305" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>end</name></member>
+      <member refid="classGuia__Tlf_1a7f87e18af3b8a7d7b542342c0318c33e" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>end</name></member>
+      <member refid="classGuia__Tlf_1a10662395b20eed0d83ec9119f684e17f" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>gettelefono</name></member>
+      <member refid="classGuia__Tlf_1ae55a42b80111e9bf9bb051514fbe6d6f" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>insert</name></member>
+      <member refid="classGuia__Tlf_1aa2893a511b0adb23ff8fe95162fa186d" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>insert</name></member>
+      <member refid="classGuia__Tlf_1a07860c300a55d62ca00a680668297752" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>insert</name></member>
+      <member refid="classGuia__Tlf_1a3e0b08a1985d3c72853690730319172f" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>operator+</name></member>
+      <member refid="classGuia__Tlf_1ac381d53f275ce769830e07fbc56902b0" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>operator-</name></member>
+      <member refid="classGuia__Tlf_1a73eb02557f3118999710c66aa9ecf309" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classGuia__Tlf_1ac15a5b0c2eb7d5b1843f11beb492495e" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classGuia__Tlf_1a2959772b25b0871e27889d02a6a917c7" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>operator[]</name></member>
+      <member refid="classGuia__Tlf_1ac709b1fb7e2c04f58f660fefab6b5a3d" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>operator^</name></member>
+      <member refid="classGuia__Tlf_1a87f4cbea4ba03c3a70178bb5358cda51" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>previos</name></member>
+      <member refid="classGuia__Tlf_1a081c98f65dce5a08a2e032446b6c4931" prot="public" virt="non-virtual"><scope>Guia_Tlf</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classDiccionario" kind="class" language="C++" prot="public">
+    <compoundname>Diccionario</compoundname>
+    <innerclass refid="classDiccionario_1_1const__iterator" prot="public">Diccionario::const_iterator</innerclass>
+    <innerclass refid="classDiccionario_1_1iterator" prot="public">Diccionario::iterator</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>U</declname>
+        <defname>U</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDiccionario_1a1d01f96bf6644d0fe31739b1a1124a5a" prot="private" static="no" mutable="no">
+        <type>list&lt; <ref refid="structdata" kindref="compound">data</ref>&lt; T, U &gt; &gt;</type>
+        <definition>list&lt;data&lt;T,U&gt; &gt; Diccionario&lt; T, U &gt;::datos</definition>
+        <argsstring></argsstring>
+        <name>datos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="46" column="1" bodyfile="include/diccionario.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classDiccionario_1a26dc2371417e59c6bc1c76429d98c563" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diccionario&lt; T, U &gt;::Copiar</definition>
+        <argsstring>(const Diccionario&lt; T, U &gt; &amp;D)</argsstring>
+        <name>Copiar</name>
+        <param>
+          <type>const <ref refid="classDiccionario" kindref="compound">Diccionario</ref>&lt; T, U &gt; &amp;</type>
+          <declname>D</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="48" column="1" bodyfile="include/diccionario.h" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1acac6407741193329f9658da802d3033f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diccionario&lt; T, U &gt;::Borrar</definition>
+        <argsstring>()</argsstring>
+        <name>Borrar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="53" column="1" bodyfile="include/diccionario.h" bodystart="53" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDiccionario_1adad32f7bfd34b7a8631ff5f26033b369" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Diccionario&lt; T, U &gt;::Diccionario</definition>
+        <argsstring>()</argsstring>
+        <name>Diccionario</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="61" column="1" bodyfile="include/diccionario.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1ad8917f4e401b473139403dc5964e8307" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Diccionario&lt; T, U &gt;::Diccionario</definition>
+        <argsstring>(const Diccionario &amp;D)</argsstring>
+        <name>Diccionario</name>
+        <param>
+          <type>const <ref refid="classDiccionario" kindref="compound">Diccionario</ref> &amp;</type>
+          <declname>D</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="64" column="1" bodyfile="include/diccionario.h" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1a006b21559ae7e1b449c785fc47dfb04d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Diccionario&lt; T, U &gt;::~Diccionario</definition>
+        <argsstring>()</argsstring>
+        <name>~Diccionario</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="69" column="1" bodyfile="include/diccionario.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1abc9504855c268dcdffb7e117489992f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classDiccionario" kindref="compound">Diccionario</ref>&lt; T, U &gt; &amp;</type>
+        <definition>Diccionario&lt;T,U&gt;&amp; Diccionario&lt; T, U &gt;::operator=</definition>
+        <argsstring>(const Diccionario&lt; T, U &gt; &amp;D)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classDiccionario" kindref="compound">Diccionario</ref>&lt; T, U &gt; &amp;</type>
+          <declname>D</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="72" column="1" bodyfile="include/diccionario.h" bodystart="72" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1aed08682f43af8f4537c6a88211bb225a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Diccionario&lt; T, U &gt;::Esta_Clave</definition>
+        <argsstring>(const T &amp;p, typename list&lt; data&lt; T, U &gt; &gt;::iterator &amp;it_out)</argsstring>
+        <name>Esta_Clave</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>typename list&lt; <ref refid="structdata" kindref="compound">data</ref>&lt; T, U &gt; &gt;::<ref refid="classDiccionario_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+          <declname>it_out</declname>
+        </param>
+        <briefdescription>
+<para>Busca la clave p en el diccionario. Si está devuelve un iterador a dónde está clave. Si no está, devuelve end() y deja el iterador de salida apuntando al sitio dónde debería estar la clave. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>palabra a buscar en el diccionario </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>it_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iterador que apunta a la palabra p </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="87" column="1" bodyfile="include/diccionario.h" bodystart="87" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1af520b73907852cc8002260ddf9fb822c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diccionario&lt; T, U &gt;::Insertar</definition>
+        <argsstring>(const T &amp;clave, const list&lt; U &gt; &amp;info)</argsstring>
+        <name>Insertar</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>clave</declname>
+        </param>
+        <param>
+          <type>const list&lt; U &gt; &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Inserta un nuevo registro en el diccionario. Lo hace a través de la clave e inserta la lista con toda la información asociada a esa clave. Si el diccionario no estuviera ordenado habría que usar la función sort() </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clave</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>clave a insertar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>información asociada a clave </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="121" column="1" bodyfile="include/diccionario.h" bodystart="121" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1a7e167da231bff610001df3c20cc9b7a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diccionario&lt; T, U &gt;::AddSignificado_Palabra</definition>
+        <argsstring>(const U &amp;s, const T &amp;p)</argsstring>
+        <name>AddSignificado_Palabra</name>
+        <param>
+          <type>const U &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Añade una nueva informacion asocida a una clave que está en el diccionario. la nueva información se inserta al final de la lista de información. Si no esta la clave la inserta y añade la informacion asociada. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>añade un nuevo significado a una palabra (clave) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>palabra a la que añadir significado. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="143" column="1" bodyfile="include/diccionario.h" bodystart="143" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1ad262cd8d8e11286beecfa4851ec2c948" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>list&lt; U &gt;</type>
+        <definition>list&lt;U&gt; Diccionario&lt; T, U &gt;::getInfo_Asoc</definition>
+        <argsstring>(const T &amp;p)</argsstring>
+        <name>getInfo_Asoc</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Devuelve la información (una lista) asociada a una clave p. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es la palabra (clave) a buscar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="158" column="1" bodyfile="include/diccionario.h" bodystart="158" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1aee09a7283def9dc0d94b079887fff66e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Diccionario&lt; T, U &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Devuelve el tamaño del diccionario. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="174" column="1" bodyfile="include/diccionario.h" bodystart="174" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1aa17ce3d7317d78f5927ae7c0564089cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classDiccionario_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator Diccionario&lt; T, U &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="256" column="1" bodyfile="include/diccionario.h" bodystart="256" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1adb5cdbfce59b4005bd07473273df3a8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classDiccionario_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator Diccionario&lt; T, U &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="261" column="1" bodyfile="include/diccionario.h" bodystart="261" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1a7b4d128e7b2eeddf082757babd1e0aee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classDiccionario_1_1const__iterator" kindref="compound">const_iterator</ref></type>
+        <definition>const_iterator Diccionario&lt; T, U &gt;::begin</definition>
+        <argsstring>() const </argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="267" column="1" bodyfile="include/diccionario.h" bodystart="267" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiccionario_1ab4aefa71c2ab89aba64dcbe29991fb9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classDiccionario_1_1const__iterator" kindref="compound">const_iterator</ref></type>
+        <definition>const_iterator Diccionario&lt; T, U &gt;::end</definition>
+        <argsstring>() const </argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="272" column="1" bodyfile="include/diccionario.h" bodystart="272" bodyend="276"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/diccionario.h" line="42" column="1" bodyfile="include/diccionario.h" bodystart="42" bodyend="280"/>
+    <listofallmembers>
+      <member refid="classDiccionario_1a7e167da231bff610001df3c20cc9b7a7" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>AddSignificado_Palabra</name></member>
+      <member refid="classDiccionario_1aa17ce3d7317d78f5927ae7c0564089cc" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>begin</name></member>
+      <member refid="classDiccionario_1a7b4d128e7b2eeddf082757babd1e0aee" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>begin</name></member>
+      <member refid="classDiccionario_1acac6407741193329f9658da802d3033f" prot="private" virt="non-virtual"><scope>Diccionario</scope><name>Borrar</name></member>
+      <member refid="classDiccionario_1a26dc2371417e59c6bc1c76429d98c563" prot="private" virt="non-virtual"><scope>Diccionario</scope><name>Copiar</name></member>
+      <member refid="classDiccionario_1a1d01f96bf6644d0fe31739b1a1124a5a" prot="private" virt="non-virtual"><scope>Diccionario</scope><name>datos</name></member>
+      <member refid="classDiccionario_1adad32f7bfd34b7a8631ff5f26033b369" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>Diccionario</name></member>
+      <member refid="classDiccionario_1ad8917f4e401b473139403dc5964e8307" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>Diccionario</name></member>
+      <member refid="classDiccionario_1adb5cdbfce59b4005bd07473273df3a8e" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>end</name></member>
+      <member refid="classDiccionario_1ab4aefa71c2ab89aba64dcbe29991fb9e" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>end</name></member>
+      <member refid="classDiccionario_1aed08682f43af8f4537c6a88211bb225a" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>Esta_Clave</name></member>
+      <member refid="classDiccionario_1ad262cd8d8e11286beecfa4851ec2c948" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>getInfo_Asoc</name></member>
+      <member refid="classDiccionario_1af520b73907852cc8002260ddf9fb822c" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>Insertar</name></member>
+      <member refid="classDiccionario_1abc9504855c268dcdffb7e117489992f6" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>operator=</name></member>
+      <member refid="classDiccionario_1aee09a7283def9dc0d94b079887fff66e" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>size</name></member>
+      <member refid="classDiccionario_1a006b21559ae7e1b449c785fc47dfb04d" prot="public" virt="non-virtual"><scope>Diccionario</scope><name>~Diccionario</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

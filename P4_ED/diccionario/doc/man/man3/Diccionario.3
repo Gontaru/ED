@@ -1,0 +1,116 @@
+.TH "Diccionario< T, U >" 3 "Sábado, 12 de Diciembre de 2020" "diccionario" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Diccionario< T, U > \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Clases"
+
+.in +1c
+.ti -1c
+.RI "class \fBconst_iterator\fP"
+.br
+.ti -1c
+.RI "class \fBiterator\fP"
+.br
+.in -1c
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBDiccionario\fP (const \fBDiccionario\fP &D)"
+.br
+.ti -1c
+.RI "\fBDiccionario\fP< T, U > & \fBoperator=\fP (const \fBDiccionario\fP< T, U > &D)"
+.br
+.ti -1c
+.RI "bool \fBEsta_Clave\fP (const T &p, typename list< \fBdata\fP< T, U > >::\fBiterator\fP &it_out)"
+.br
+.RI "\fIBusca la clave p en el diccionario\&. Si está devuelve un iterador a dónde está clave\&. Si no está, devuelve end() y deja el iterador de salida apuntando al sitio dónde debería estar la clave\&. \fP"
+.ti -1c
+.RI "void \fBInsertar\fP (const T &clave, const list< U > &info)"
+.br
+.RI "\fIInserta un nuevo registro en el diccionario\&. Lo hace a través de la clave e inserta la lista con toda la información asociada a esa clave\&. Si el diccionario no estuviera ordenado habría que usar la función sort() \fP"
+.ti -1c
+.RI "void \fBAddSignificado_Palabra\fP (const U &s, const T &p)"
+.br
+.RI "\fIAñade una nueva informacion asocida a una clave que está en el diccionario\&. la nueva información se inserta al final de la lista de información\&. Si no esta la clave la inserta y añade la informacion asociada\&. \fP"
+.ti -1c
+.RI "list< U > \fBgetInfo_Asoc\fP (const T &p)"
+.br
+.RI "\fIDevuelve la información (una lista) asociada a una clave p\&. \fP"
+.ti -1c
+.RI "int \fBsize\fP () const "
+.br
+.RI "\fIDevuelve el tamaño del diccionario\&. \fP"
+.ti -1c
+.RI "\fBiterator\fP \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "\fBiterator\fP \fBend\fP ()"
+.br
+.ti -1c
+.RI "\fBconst_iterator\fP \fBbegin\fP () const "
+.br
+.ti -1c
+.RI "\fBconst_iterator\fP \fBend\fP () const "
+.br
+.in -1c
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "template<class T, class U> void \fBDiccionario\fP< T, U >::AddSignificado_Palabra (const U & s, const T & p)\fC [inline]\fP"
+
+.PP
+Añade una nueva informacion asocida a una clave que está en el diccionario\&. la nueva información se inserta al final de la lista de información\&. Si no esta la clave la inserta y añade la informacion asociada\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIs\fP añade un nuevo significado a una palabra (clave) 
+.br
+\fIp\fP palabra a la que añadir significado\&. 
+.RE
+.PP
+
+.SS "template<class T, class U> bool \fBDiccionario\fP< T, U >::Esta_Clave (const T & p, typename list< \fBdata\fP< T, U > >::\fBiterator\fP & it_out)\fC [inline]\fP"
+
+.PP
+Busca la clave p en el diccionario\&. Si está devuelve un iterador a dónde está clave\&. Si no está, devuelve end() y deja el iterador de salida apuntando al sitio dónde debería estar la clave\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIp\fP palabra a buscar en el diccionario 
+.br
+\fIit_out\fP iterador que apunta a la palabra p 
+.RE
+.PP
+
+.SS "template<class T, class U> list<U> \fBDiccionario\fP< T, U >::getInfo_Asoc (const T & p)\fC [inline]\fP"
+
+.PP
+Devuelve la información (una lista) asociada a una clave p\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIp\fP es la palabra (clave) a buscar\&. 
+.RE
+.PP
+
+.SS "template<class T, class U> void \fBDiccionario\fP< T, U >::Insertar (const T & clave, const list< U > & info)\fC [inline]\fP"
+
+.PP
+Inserta un nuevo registro en el diccionario\&. Lo hace a través de la clave e inserta la lista con toda la información asociada a esa clave\&. Si el diccionario no estuviera ordenado habría que usar la función sort() 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIclave\fP clave a insertar 
+.br
+\fIinfo\fP información asociada a clave 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para diccionario del código fuente\&.

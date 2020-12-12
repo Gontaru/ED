@@ -1,0 +1,122 @@
+\section{Referencia de la plantilla de la Clase Diccionario$<$ T, U $>$}
+\label{classDiccionario}\index{Diccionario$<$ T, U $>$@{Diccionario$<$ T, U $>$}}
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf const\+\_\+iterator}
+\item 
+class {\bf iterator}
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Diccionario} (const {\bf Diccionario} \&D)\label{classDiccionario_ad8917f4e401b473139403dc5964e8307}
+
+\item 
+{\bf Diccionario}$<$ T, U $>$ \& {\bfseries operator=} (const {\bf Diccionario}$<$ T, U $>$ \&D)\label{classDiccionario_abc9504855c268dcdffb7e117489992f6}
+
+\item 
+bool {\bf Esta\+\_\+\+Clave} (const T \&p, typename list$<$ {\bf data}$<$ T, U $>$ $>$\+::{\bf iterator} \&it\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Busca la clave p en el diccionario. Si está devuelve un iterador a dónde está clave. Si no está, devuelve end() y deja el iterador de salida apuntando al sitio dónde debería estar la clave. \end{DoxyCompactList}\item 
+void {\bf Insertar} (const T \&clave, const list$<$ U $>$ \&info)
+\begin{DoxyCompactList}\small\item\em Inserta un nuevo registro en el diccionario. Lo hace a través de la clave e inserta la lista con toda la información asociada a esa clave. Si el diccionario no estuviera ordenado habría que usar la función sort() \end{DoxyCompactList}\item 
+void {\bf Add\+Significado\+\_\+\+Palabra} (const U \&s, const T \&p)
+\begin{DoxyCompactList}\small\item\em Añade una nueva informacion asocida a una clave que está en el diccionario. la nueva información se inserta al final de la lista de información. Si no esta la clave la inserta y añade la informacion asociada. \end{DoxyCompactList}\item 
+list$<$ U $>$ {\bf get\+Info\+\_\+\+Asoc} (const T \&p)
+\begin{DoxyCompactList}\small\item\em Devuelve la información (una lista) asociada a una clave p. \end{DoxyCompactList}\item 
+int {\bf size} () const \label{classDiccionario_aee09a7283def9dc0d94b079887fff66e}
+
+\begin{DoxyCompactList}\small\item\em Devuelve el tamaño del diccionario. \end{DoxyCompactList}\item 
+{\bf iterator} {\bfseries begin} ()\label{classDiccionario_aa17ce3d7317d78f5927ae7c0564089cc}
+
+\item 
+{\bf iterator} {\bfseries end} ()\label{classDiccionario_adb5cdbfce59b4005bd07473273df3a8e}
+
+\item 
+{\bf const\+\_\+iterator} {\bfseries begin} () const \label{classDiccionario_a7b4d128e7b2eeddf082757babd1e0aee}
+
+\item 
+{\bf const\+\_\+iterator} {\bfseries end} () const \label{classDiccionario_ab4aefa71c2ab89aba64dcbe29991fb9e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Diccionario@{Diccionario}!Add\+Significado\+\_\+\+Palabra@{Add\+Significado\+\_\+\+Palabra}}
+\index{Add\+Significado\+\_\+\+Palabra@{Add\+Significado\+\_\+\+Palabra}!Diccionario@{Diccionario}}
+\subsubsection[{Add\+Significado\+\_\+\+Palabra(const U \&s, const T \&p)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class U$>$ void {\bf Diccionario}$<$ T, U $>$\+::Add\+Significado\+\_\+\+Palabra (
+\begin{DoxyParamCaption}
+\item[{const U \&}]{s, }
+\item[{const T \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classDiccionario_a7e167da231bff610001df3c20cc9b7a7}
+
+
+Añade una nueva informacion asocida a una clave que está en el diccionario. la nueva información se inserta al final de la lista de información. Si no esta la clave la inserta y añade la informacion asociada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em s} & añade un nuevo significado a una palabra (clave) \\
+\hline
+{\em p} & palabra a la que añadir significado. \\
+\hline
+\end{DoxyParams}
+\index{Diccionario@{Diccionario}!Esta\+\_\+\+Clave@{Esta\+\_\+\+Clave}}
+\index{Esta\+\_\+\+Clave@{Esta\+\_\+\+Clave}!Diccionario@{Diccionario}}
+\subsubsection[{Esta\+\_\+\+Clave(const T \&p, typename list$<$ data$<$ T, U $>$ $>$\+::iterator \&it\+\_\+out)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class U$>$ bool {\bf Diccionario}$<$ T, U $>$\+::Esta\+\_\+\+Clave (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{p, }
+\item[{typename list$<$ {\bf data}$<$ T, U $>$ $>$\+::{\bf iterator} \&}]{it\+\_\+out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classDiccionario_aed08682f43af8f4537c6a88211bb225a}
+
+
+Busca la clave p en el diccionario. Si está devuelve un iterador a dónde está clave. Si no está, devuelve end() y deja el iterador de salida apuntando al sitio dónde debería estar la clave. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p} & palabra a buscar en el diccionario \\
+\hline
+{\em it\+\_\+out} & iterador que apunta a la palabra p \\
+\hline
+\end{DoxyParams}
+\index{Diccionario@{Diccionario}!get\+Info\+\_\+\+Asoc@{get\+Info\+\_\+\+Asoc}}
+\index{get\+Info\+\_\+\+Asoc@{get\+Info\+\_\+\+Asoc}!Diccionario@{Diccionario}}
+\subsubsection[{get\+Info\+\_\+\+Asoc(const T \&p)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class U$>$ list$<$U$>$ {\bf Diccionario}$<$ T, U $>$\+::get\+Info\+\_\+\+Asoc (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classDiccionario_ad262cd8d8e11286beecfa4851ec2c948}
+
+
+Devuelve la información (una lista) asociada a una clave p. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p} & es la palabra (clave) a buscar. \\
+\hline
+\end{DoxyParams}
+\index{Diccionario@{Diccionario}!Insertar@{Insertar}}
+\index{Insertar@{Insertar}!Diccionario@{Diccionario}}
+\subsubsection[{Insertar(const T \&clave, const list$<$ U $>$ \&info)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class U$>$ void {\bf Diccionario}$<$ T, U $>$\+::Insertar (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{clave, }
+\item[{const list$<$ U $>$ \&}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classDiccionario_af520b73907852cc8002260ddf9fb822c}
+
+
+Inserta un nuevo registro en el diccionario. Lo hace a través de la clave e inserta la lista con toda la información asociada a esa clave. Si el diccionario no estuviera ordenado habría que usar la función sort() 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em clave} & clave a insertar \\
+\hline
+{\em info} & información asociada a clave \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/{\bf diccionario.\+h}\end{DoxyCompactItemize}

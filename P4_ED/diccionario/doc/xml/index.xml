@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classDiccionario_1_1const__iterator" kind="class"><name>Diccionario::const_iterator</name>
+    <member refid="classDiccionario_1_1const__iterator_1ad0c1c12cc398e1ee49ccf46a89cf027c" kind="variable"><name>it</name></member>
+    <member refid="classDiccionario_1_1const__iterator_1ad36be158dde0129b4e0d03d0e454a26b" kind="friend"><name>Diccionario</name></member>
+    <member refid="classDiccionario_1_1const__iterator_1a41fced4f0843d04af3c4e737c77b53f1" kind="function"><name>const_iterator</name></member>
+    <member refid="classDiccionario_1_1const__iterator_1af923feb3b386f14de993ff221b8b19d1" kind="function"><name>operator++</name></member>
+    <member refid="classDiccionario_1_1const__iterator_1accef51f7cda1149d52a187986ad328cb" kind="function"><name>operator--</name></member>
+    <member refid="classDiccionario_1_1const__iterator_1a8d616c186d5d40873e0354ed2739dbd8" kind="function"><name>operator*</name></member>
+    <member refid="classDiccionario_1_1const__iterator_1a506f760dafc0b7d5215b924e98fe8522" kind="function"><name>operator==</name></member>
+    <member refid="classDiccionario_1_1const__iterator_1a6915b38389c484f4caecc455d8b1a311" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="structdata" kind="struct"><name>data</name>
+    <member refid="structdata_1aa3298b9b021e026f8663005d2fc19e1a" kind="variable"><name>clave</name></member>
+    <member refid="structdata_1a8299bf6975cfaffbb2354a65881e16a2" kind="variable"><name>info_asoci</name></member>
+  </compound>
+  <compound refid="classDiccionario" kind="class"><name>Diccionario</name>
+    <member refid="classDiccionario_1a1d01f96bf6644d0fe31739b1a1124a5a" kind="variable"><name>datos</name></member>
+    <member refid="classDiccionario_1a26dc2371417e59c6bc1c76429d98c563" kind="function"><name>Copiar</name></member>
+    <member refid="classDiccionario_1acac6407741193329f9658da802d3033f" kind="function"><name>Borrar</name></member>
+    <member refid="classDiccionario_1adad32f7bfd34b7a8631ff5f26033b369" kind="function"><name>Diccionario</name></member>
+    <member refid="classDiccionario_1ad8917f4e401b473139403dc5964e8307" kind="function"><name>Diccionario</name></member>
+    <member refid="classDiccionario_1a006b21559ae7e1b449c785fc47dfb04d" kind="function"><name>~Diccionario</name></member>
+    <member refid="classDiccionario_1abc9504855c268dcdffb7e117489992f6" kind="function"><name>operator=</name></member>
+    <member refid="classDiccionario_1aed08682f43af8f4537c6a88211bb225a" kind="function"><name>Esta_Clave</name></member>
+    <member refid="classDiccionario_1af520b73907852cc8002260ddf9fb822c" kind="function"><name>Insertar</name></member>
+    <member refid="classDiccionario_1a7e167da231bff610001df3c20cc9b7a7" kind="function"><name>AddSignificado_Palabra</name></member>
+    <member refid="classDiccionario_1ad262cd8d8e11286beecfa4851ec2c948" kind="function"><name>getInfo_Asoc</name></member>
+    <member refid="classDiccionario_1aee09a7283def9dc0d94b079887fff66e" kind="function"><name>size</name></member>
+    <member refid="classDiccionario_1aa17ce3d7317d78f5927ae7c0564089cc" kind="function"><name>begin</name></member>
+    <member refid="classDiccionario_1adb5cdbfce59b4005bd07473273df3a8e" kind="function"><name>end</name></member>
+    <member refid="classDiccionario_1a7b4d128e7b2eeddf082757babd1e0aee" kind="function"><name>begin</name></member>
+    <member refid="classDiccionario_1ab4aefa71c2ab89aba64dcbe29991fb9e" kind="function"><name>end</name></member>
+  </compound>
+  <compound refid="classDiccionario_1_1iterator" kind="class"><name>Diccionario::iterator</name>
+    <member refid="classDiccionario_1_1iterator_1a998fdcb53af7aebea5092ba8e86391d8" kind="variable"><name>it</name></member>
+    <member refid="classDiccionario_1_1iterator_1ad36be158dde0129b4e0d03d0e454a26b" kind="friend"><name>Diccionario</name></member>
+    <member refid="classDiccionario_1_1iterator_1a37f6e3ffdb007c1dd6f9ad5b48e1bbf9" kind="function"><name>iterator</name></member>
+    <member refid="classDiccionario_1_1iterator_1aaf5fab050eb47cf1cb68f94d7335c33f" kind="function"><name>operator++</name></member>
+    <member refid="classDiccionario_1_1iterator_1a93e2bbded4ff4b10a96c51cf993dad84" kind="function"><name>operator--</name></member>
+    <member refid="classDiccionario_1_1iterator_1aceb8c07d114ae8044470135ebe77a7b0" kind="function"><name>operator*</name></member>
+    <member refid="classDiccionario_1_1iterator_1a12322ce23e125fa807b56efac74b898a" kind="function"><name>operator==</name></member>
+    <member refid="classDiccionario_1_1iterator_1a8f480389fc693b17f1664495fc22bcc3" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="diccionario_8h" kind="file"><name>diccionario.h</name>
+    <member refid="diccionario_8h_1ad151ee92c33630c87d1f13a5a3faf135" kind="function"><name>operator&lt;</name></member>
+  </compound>
+  <compound refid="usodiccionario_8cpp" kind="file"><name>usodiccionario.cpp</name>
+    <member refid="usodiccionario_8cpp_1a2df23b649675001c9287783c5ba5de7f" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="usodiccionario_8cpp_1ad641af7266310b3ad1491ba4268cbb79" kind="function"><name>operator&gt;&gt;</name></member>
+    <member refid="usodiccionario_8cpp_1a44e0200532574c958f7ed23766d7df4a" kind="function"><name>EscribeSigni</name></member>
+    <member refid="usodiccionario_8cpp_1ab7d7f4f2aa74644a69d214b42affca0a" kind="function"><name>ImprimeAlReves</name></member>
+    <member refid="usodiccionario_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

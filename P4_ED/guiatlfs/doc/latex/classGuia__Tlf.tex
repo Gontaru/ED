@@ -1,0 +1,391 @@
+\section{Referencia de la Clase Guia\+\_\+\+Tlf}
+\label{classGuia__Tlf}\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+
+
+T.\+D.\+A. \doxyref{Guia\+\_\+\+Tlf}{p.}{classGuia__Tlf}.  
+
+
+
+
+{\ttfamily \#include $<$guiatlf.\+h$>$}
+
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf const\+\_\+iterator}
+\item 
+class {\bf iterator}
+\begin{DoxyCompactList}\small\item\em clase para iterar sobre la guia \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+list$<$ string $>$ \& {\bf operator[$\,$]} (const string \&nombre)
+\begin{DoxyCompactList}\small\item\em Acceso a un elemento. \end{DoxyCompactList}\item 
+list$<$ string $>$ {\bfseries gettelefono} (const string \&nombre)\label{classGuia__Tlf_a10662395b20eed0d83ec9119f684e17f}
+
+\item 
+pair$<$ map$<$ string, list$<$ string $>$ $>$\+::{\bf iterator}, bool $>$ {\bf insert} (string nombre, string tlf)
+\begin{DoxyCompactList}\small\item\em Insert un nuevo telefono. \end{DoxyCompactList}\item 
+pair$<$ map$<$ string, list$<$ string $>$ $>$\+::{\bf iterator}, bool $>$ {\bf insert} (pair$<$ string, list$<$ string $>$ $>$ p)
+\begin{DoxyCompactList}\small\item\em Insert un nuevo telefono. \end{DoxyCompactList}\item 
+pair$<$ map$<$ string, list$<$ string $>$ $>$\+::{\bf iterator}, bool $>$ {\bf insert} (pair$<$ string, string $>$ p)
+\begin{DoxyCompactList}\small\item\em Insert un nuevo telefono. \end{DoxyCompactList}\item 
+void {\bf borrar} (const string \&nombre)
+\begin{DoxyCompactList}\small\item\em Borrar un telefono. \end{DoxyCompactList}\item 
+void {\bf borrar} (const string \&nombre, const string \&tlf)
+\begin{DoxyCompactList}\small\item\em Borrar un telefono. \end{DoxyCompactList}\item 
+int {\bf size} () const 
+\begin{DoxyCompactList}\small\item\em Numero de telefonos. \end{DoxyCompactList}\item 
+unsigned int {\bf contabiliza} (const string \&nombre)
+\begin{DoxyCompactList}\small\item\em Contabiliza cuantos telefonos tenemos asociados a un nombre. \end{DoxyCompactList}\item 
+void {\bf clear} ()\label{classGuia__Tlf_a36ac970ece51a62763bb3898159d0047}
+
+\begin{DoxyCompactList}\small\item\em Limpia la guia. \end{DoxyCompactList}\item 
+{\bf Guia\+\_\+\+Tlf} {\bf operator+} (const {\bf Guia\+\_\+\+Tlf} \&g)
+\begin{DoxyCompactList}\small\item\em Union de guias de telefonos. \end{DoxyCompactList}\item 
+{\bf Guia\+\_\+\+Tlf} {\bf operator-\/} (const {\bf Guia\+\_\+\+Tlf} \&g)
+\begin{DoxyCompactList}\small\item\em Diferencia de guias de telefonos. \end{DoxyCompactList}\item 
+{\bf Guia\+\_\+\+Tlf} {\bf operator$^\wedge$} (const {\bf Guia\+\_\+\+Tlf} \&g)
+\begin{DoxyCompactList}\small\item\em Intersección de guías de teléfonos. \end{DoxyCompactList}\item 
+{\bf Guia\+\_\+\+Tlf} {\bf previos} (const string \&nombre)
+\begin{DoxyCompactList}\small\item\em Obtiene una guia con los nombre previos a uno dado. \end{DoxyCompactList}\item 
+{\bf iterator} {\bf begin} ()\label{classGuia__Tlf_a0a0f50f45b96349e005d7457a0c05574}
+
+\begin{DoxyCompactList}\small\item\em Inicializa un iterator al comienzo de la guia. \end{DoxyCompactList}\item 
+{\bf iterator} {\bf end} ()\label{classGuia__Tlf_a91777ba1c5e206259943af1eae5aa305}
+
+\begin{DoxyCompactList}\small\item\em Inicializa un iterator al final de la guia. \end{DoxyCompactList}\item 
+{\bf const\+\_\+iterator} {\bf begin} () const \label{classGuia__Tlf_a234fca5546ac8077214ac7a2f462850a}
+
+\begin{DoxyCompactList}\small\item\em Inicializa un iterator al comienzo de la guia. \end{DoxyCompactList}\item 
+{\bf const\+\_\+iterator} {\bf end} () const \label{classGuia__Tlf_a7f87e18af3b8a7d7b542342c0318c33e}
+
+\begin{DoxyCompactList}\small\item\em Inicializa un iterator al final de la guia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& {\bf operator$<$$<$} (ostream \&os, {\bf Guia\+\_\+\+Tlf} \&g)
+\begin{DoxyCompactList}\small\item\em Escritura de la guia de telefonos. \end{DoxyCompactList}\item 
+istream \& {\bf operator$>$$>$} (istream \&is, {\bf Guia\+\_\+\+Tlf} \&g)
+\begin{DoxyCompactList}\small\item\em Lectura de la guia de telefonos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+T.\+D.\+A. \doxyref{Guia\+\_\+\+Tlf}{p.}{classGuia__Tlf}. 
+
+Una instancia {\itshape c} del tipo de datos abstracto {\ttfamily \doxyref{Guia\+\_\+\+Tlf}{p.}{classGuia__Tlf}} es un objeto formado por una colección de pares \{(e11,e21),(e12,e22),(e13,e23),...,(e1n-\/1,e2n-\/1)\} ordenados por la el primer elemento del par denominado clave o key. No existen elementos repetidos.
+
+Un ejemplo de su uso\+:
+
+\begin{DoxyAuthor}{Autor}
+Rosa Rodríguez 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Marzo 2012 
+\end{DoxyDate}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!borrar@{borrar}}
+\index{borrar@{borrar}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{borrar(const string \&nombre)}]{\setlength{\rightskip}{0pt plus 5cm}void Guia\+\_\+\+Tlf\+::borrar (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{nombre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classGuia__Tlf_a57e32bbc9e76567d22e5275d4d2a6515}
+
+
+Borrar un telefono. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & nombre que se quiere borrar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+\+: en caso de que fuese un multimap borraria todos con ese nombre 
+\end{DoxyNote}
+
+
+Referenciado por operator-\/().
+
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!borrar@{borrar}}
+\index{borrar@{borrar}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{borrar(const string \&nombre, const string \&tlf)}]{\setlength{\rightskip}{0pt plus 5cm}void Guia\+\_\+\+Tlf\+::borrar (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{nombre, }
+\item[{const string \&}]{tlf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classGuia__Tlf_af8adac24fd35985b9016a4a38cca60f4}
+
+
+Borrar un telefono. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & nombre que se quiere borrar y telefono asociado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+\+: esta funcion nos permite borrar solamente aquel que coincida en nombre y tlf 
+\end{DoxyNote}
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!contabiliza@{contabiliza}}
+\index{contabiliza@{contabiliza}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{contabiliza(const string \&nombre)}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Guia\+\_\+\+Tlf\+::contabiliza (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{nombre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classGuia__Tlf_aa63213524c6339ea89baae2b5d2ebb69}
+
+
+Contabiliza cuantos telefonos tenemos asociados a un nombre. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & nombre sobre el que queremos consultar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+numero de telefonos asociados a un nombre 
+\end{DoxyReturn}
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!insert@{insert}}
+\index{insert@{insert}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{insert(string nombre, string tlf)}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$map$<$string, list$<$string$>$ $>$\+::{\bf iterator},bool$>$ Guia\+\_\+\+Tlf\+::insert (
+\begin{DoxyParamCaption}
+\item[{string}]{nombre, }
+\item[{string}]{tlf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classGuia__Tlf_ae55a42b80111e9bf9bb051514fbe6d6f}
+
+
+Insert un nuevo telefono. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & nombre clave del nuevo telefono \\
+\hline
+{\em tlf} & numero de telefono \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\+: un pair donde first apunta al nuevo elemento insertado y bool es true si se ha insertado el nuevo tlf o o false en caso contrario 
+\end{DoxyReturn}
+
+
+Referenciado por operator+(), operator$^\wedge$() y previos().
+
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!insert@{insert}}
+\index{insert@{insert}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{insert(pair$<$ string, list$<$ string $>$ $>$ p)}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$map$<$string, list$<$string$>$ $>$\+::{\bf iterator},bool$>$ Guia\+\_\+\+Tlf\+::insert (
+\begin{DoxyParamCaption}
+\item[{pair$<$ string, list$<$ string $>$ $>$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classGuia__Tlf_aa2893a511b0adb23ff8fe95162fa186d}
+
+
+Insert un nuevo telefono. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p} & pair con el nombre y el telefono asociado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\+: un pair donde first apunta al nuevo elemento insertado y bool es true si se ha insertado el nuevo tlf o o false en caso contrario 
+\end{DoxyReturn}
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!insert@{insert}}
+\index{insert@{insert}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{insert(pair$<$ string, string $>$ p)}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$map$<$string, list$<$string$>$ $>$\+::{\bf iterator},bool$>$ Guia\+\_\+\+Tlf\+::insert (
+\begin{DoxyParamCaption}
+\item[{pair$<$ string, string $>$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classGuia__Tlf_a07860c300a55d62ca00a680668297752}
+
+
+Insert un nuevo telefono. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p} & pair con el nombre y el telefono asociado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\+: un pair donde first apunta al nuevo elemento insertado y bool es true si se ha insertado el nuevo tlf o o false en caso contrario 
+\end{DoxyReturn}
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!operator+@{operator+}}
+\index{operator+@{operator+}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{operator+(const Guia\+\_\+\+Tlf \&g)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Guia\+\_\+\+Tlf} Guia\+\_\+\+Tlf\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Guia\+\_\+\+Tlf} \&}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classGuia__Tlf_a3e0b08a1985d3c72853690730319172f}
+
+
+Union de guias de telefonos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em g} & guia que se une \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\+: una nueva guia resultado de unir el objeto al que apunta this y g 
+\end{DoxyReturn}
+
+
+Hace referencia a insert().
+
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{operator-\/(const Guia\+\_\+\+Tlf \&g)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Guia\+\_\+\+Tlf} Guia\+\_\+\+Tlf\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Guia\+\_\+\+Tlf} \&}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classGuia__Tlf_ac381d53f275ce769830e07fbc56902b0}
+
+
+Diferencia de guias de telefonos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em g} & guia a restar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\+: una nueva guia resultado de la diferencia del objeto al que apunta this y g 
+\end{DoxyReturn}
+
+
+Hace referencia a borrar().
+
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!operator[$\,$]@{operator[]}}
+\index{operator[$\,$]@{operator[]}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{operator[](const string \&nombre)}]{\setlength{\rightskip}{0pt plus 5cm}list$<$string$>$\& Guia\+\_\+\+Tlf\+::operator[$\,$] (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{nombre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classGuia__Tlf_a2959772b25b0871e27889d02a6a917c7}
+
+
+Acceso a un elemento. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & nombre del elemento elemento acceder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+devuelve el valor asociado a un nombre, es decir el teléfono 
+\end{DoxyReturn}
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!operator$^\wedge$@{operator$^\wedge$}}
+\index{operator$^\wedge$@{operator$^\wedge$}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{operator$^\wedge$(const Guia\+\_\+\+Tlf \&g)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Guia\+\_\+\+Tlf} Guia\+\_\+\+Tlf\+::operator$^\wedge$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Guia\+\_\+\+Tlf} \&}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classGuia__Tlf_ac709b1fb7e2c04f58f660fefab6b5a3d}
+
+
+Intersección de guías de teléfonos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em g} & guia a restar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\+: una nueva guia resultado de la intersección del objeto al que apunta this y g 
+\end{DoxyReturn}
+
+
+Hace referencia a insert().
+
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!previos@{previos}}
+\index{previos@{previos}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{previos(const string \&nombre)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Guia\+\_\+\+Tlf} Guia\+\_\+\+Tlf\+::previos (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{nombre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classGuia__Tlf_a87f4cbea4ba03c3a70178bb5358cda51}
+
+
+Obtiene una guia con los nombre previos a uno dado. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & nombre delimitador \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+nueva guia sin nombres mayores que {\itshape nombre} 
+\end{DoxyReturn}
+
+
+Hace referencia a insert().
+
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!size@{size}}
+\index{size@{size}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{size() const }]{\setlength{\rightskip}{0pt plus 5cm}int Guia\+\_\+\+Tlf\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classGuia__Tlf_a081c98f65dce5a08a2e032446b6c4931}
+
+
+Numero de telefonos. 
+
+\begin{DoxyReturn}{Devuelve}
+el numero de telefonos asociados 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{{\bf Guia\+\_\+\+Tlf} \&}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classGuia__Tlf_a73eb02557f3118999710c66aa9ecf309}
+
+
+Escritura de la guia de telefonos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & flujo de salida. Es M\+O\+D\+I\+F\+I\+C\+A\+DO \\
+\hline
+{\em g} & guia de telefonos que se escribe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+el flujo de salida 
+\end{DoxyReturn}
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{is, }
+\item[{{\bf Guia\+\_\+\+Tlf} \&}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classGuia__Tlf_ac15a5b0c2eb7d5b1843f11beb492495e}
+
+
+Lectura de la guia de telefonos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em is} & flujo de entrada. ES M\+O\+D\+I\+F\+I\+C\+A\+DO \\
+\hline
+{\em g} & guia de telefonos. ES M\+O\+D\+I\+F\+I\+C\+A\+DO \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+el flujo de entrada 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/guiatlf.\+h\end{DoxyCompactItemize}

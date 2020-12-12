@@ -1,0 +1,373 @@
+.TH "Guia_Tlf" 3 "Sábado, 12 de Diciembre de 2020" "guiatlf" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Guia_Tlf \- T\&.D\&.A\&. \fBGuia_Tlf\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <guiatlf\&.h>\fP
+.SS "Clases"
+
+.in +1c
+.ti -1c
+.RI "class \fBconst_iterator\fP"
+.br
+.ti -1c
+.RI "class \fBiterator\fP"
+.br
+.RI "\fIclase para iterar sobre la guia \fP"
+.in -1c
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "list< string > & \fBoperator[]\fP (const string &nombre)"
+.br
+.RI "\fIAcceso a un elemento\&. \fP"
+.ti -1c
+.RI "list< string > \fBgettelefono\fP (const string &nombre)"
+.br
+.ti -1c
+.RI "pair< map< string, list< string > >::\fBiterator\fP, bool > \fBinsert\fP (string nombre, string tlf)"
+.br
+.RI "\fIInsert un nuevo telefono\&. \fP"
+.ti -1c
+.RI "pair< map< string, list< string > >::\fBiterator\fP, bool > \fBinsert\fP (pair< string, list< string > > p)"
+.br
+.RI "\fIInsert un nuevo telefono\&. \fP"
+.ti -1c
+.RI "pair< map< string, list< string > >::\fBiterator\fP, bool > \fBinsert\fP (pair< string, string > p)"
+.br
+.RI "\fIInsert un nuevo telefono\&. \fP"
+.ti -1c
+.RI "void \fBborrar\fP (const string &nombre)"
+.br
+.RI "\fIBorrar un telefono\&. \fP"
+.ti -1c
+.RI "void \fBborrar\fP (const string &nombre, const string &tlf)"
+.br
+.RI "\fIBorrar un telefono\&. \fP"
+.ti -1c
+.RI "int \fBsize\fP () const "
+.br
+.RI "\fINumero de telefonos\&. \fP"
+.ti -1c
+.RI "unsigned int \fBcontabiliza\fP (const string &nombre)"
+.br
+.RI "\fIContabiliza cuantos telefonos tenemos asociados a un nombre\&. \fP"
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.RI "\fILimpia la guia\&. \fP"
+.ti -1c
+.RI "\fBGuia_Tlf\fP \fBoperator+\fP (const \fBGuia_Tlf\fP &g)"
+.br
+.RI "\fIUnion de guias de telefonos\&. \fP"
+.ti -1c
+.RI "\fBGuia_Tlf\fP \fBoperator\-\fP (const \fBGuia_Tlf\fP &g)"
+.br
+.RI "\fIDiferencia de guias de telefonos\&. \fP"
+.ti -1c
+.RI "\fBGuia_Tlf\fP \fBoperator^\fP (const \fBGuia_Tlf\fP &g)"
+.br
+.RI "\fIIntersección de guías de teléfonos\&. \fP"
+.ti -1c
+.RI "\fBGuia_Tlf\fP \fBprevios\fP (const string &nombre)"
+.br
+.RI "\fIObtiene una guia con los nombre previos a uno dado\&. \fP"
+.ti -1c
+.RI "\fBiterator\fP \fBbegin\fP ()"
+.br
+.RI "\fIInicializa un iterator al comienzo de la guia\&. \fP"
+.ti -1c
+.RI "\fBiterator\fP \fBend\fP ()"
+.br
+.RI "\fIInicializa un iterator al final de la guia\&. \fP"
+.ti -1c
+.RI "\fBconst_iterator\fP \fBbegin\fP () const "
+.br
+.RI "\fIInicializa un iterator al comienzo de la guia\&. \fP"
+.ti -1c
+.RI "\fBconst_iterator\fP \fBend\fP () const "
+.br
+.RI "\fIInicializa un iterator al final de la guia\&. \fP"
+.in -1c
+.SS "Amigas"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &os, \fBGuia_Tlf\fP &g)"
+.br
+.RI "\fIEscritura de la guia de telefonos\&. \fP"
+.ti -1c
+.RI "istream & \fBoperator>>\fP (istream &is, \fBGuia_Tlf\fP &g)"
+.br
+.RI "\fILectura de la guia de telefonos\&. \fP"
+.in -1c
+.SH "Descripción detallada"
+.PP 
+T\&.D\&.A\&. \fBGuia_Tlf\fP\&. 
+
+Una instancia \fIc\fP del tipo de datos abstracto \fC\fBGuia_Tlf\fP\fP es un objeto formado por una colección de pares {(e11,e21),(e12,e22),(e13,e23),\&.\&.\&.,(e1n-1,e2n-1)} ordenados por la el primer elemento del par denominado clave o key\&. No existen elementos repetidos\&.
+.PP
+Un ejemplo de su uso:
+.PP
+\fBAutor:\fP
+.RS 4
+Rosa Rodríguez 
+.RE
+.PP
+\fBFecha:\fP
+.RS 4
+Marzo 2012 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "void Guia_Tlf::borrar (const string & nombre)\fC [inline]\fP"
+
+.PP
+Borrar un telefono\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fInombre\fP nombre que se quiere borrar 
+.RE
+.PP
+\fBNota:\fP
+.RS 4
+: en caso de que fuese un multimap borraria todos con ese nombre 
+.RE
+.PP
+
+.PP
+Referenciado por operator\-()\&.
+.SS "void Guia_Tlf::borrar (const string & nombre, const string & tlf)\fC [inline]\fP"
+
+.PP
+Borrar un telefono\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fInombre\fP nombre que se quiere borrar y telefono asociado 
+.RE
+.PP
+\fBNota:\fP
+.RS 4
+: esta funcion nos permite borrar solamente aquel que coincida en nombre y tlf 
+.RE
+.PP
+
+.SS "unsigned int Guia_Tlf::contabiliza (const string & nombre)\fC [inline]\fP"
+
+.PP
+Contabiliza cuantos telefonos tenemos asociados a un nombre\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fInombre\fP nombre sobre el que queremos consultar 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+numero de telefonos asociados a un nombre 
+.RE
+.PP
+
+.SS "pair<map<string, list<string> >::\fBiterator\fP,bool> Guia_Tlf::insert (string nombre, string tlf)\fC [inline]\fP"
+
+.PP
+Insert un nuevo telefono\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fInombre\fP nombre clave del nuevo telefono 
+.br
+\fItlf\fP numero de telefono 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+: un pair donde first apunta al nuevo elemento insertado y bool es true si se ha insertado el nuevo tlf o o false en caso contrario 
+.RE
+.PP
+
+.PP
+Referenciado por operator+(), operator^() y previos()\&.
+.SS "pair<map<string, list<string> >::\fBiterator\fP,bool> Guia_Tlf::insert (pair< string, list< string > > p)\fC [inline]\fP"
+
+.PP
+Insert un nuevo telefono\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIp\fP pair con el nombre y el telefono asociado
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+: un pair donde first apunta al nuevo elemento insertado y bool es true si se ha insertado el nuevo tlf o o false en caso contrario 
+.RE
+.PP
+
+.SS "pair<map<string, list<string> >::\fBiterator\fP,bool> Guia_Tlf::insert (pair< string, string > p)\fC [inline]\fP"
+
+.PP
+Insert un nuevo telefono\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIp\fP pair con el nombre y el telefono asociado
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+: un pair donde first apunta al nuevo elemento insertado y bool es true si se ha insertado el nuevo tlf o o false en caso contrario 
+.RE
+.PP
+
+.SS "\fBGuia_Tlf\fP Guia_Tlf::operator+ (const \fBGuia_Tlf\fP & g)\fC [inline]\fP"
+
+.PP
+Union de guias de telefonos\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIg\fP guia que se une 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+: una nueva guia resultado de unir el objeto al que apunta this y g 
+.RE
+.PP
+
+.PP
+Hace referencia a insert()\&.
+.SS "\fBGuia_Tlf\fP Guia_Tlf::operator\- (const \fBGuia_Tlf\fP & g)\fC [inline]\fP"
+
+.PP
+Diferencia de guias de telefonos\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIg\fP guia a restar 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+: una nueva guia resultado de la diferencia del objeto al que apunta this y g 
+.RE
+.PP
+
+.PP
+Hace referencia a borrar()\&.
+.SS "list<string>& Guia_Tlf::operator[] (const string & nombre)\fC [inline]\fP"
+
+.PP
+Acceso a un elemento\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fInombre\fP nombre del elemento elemento acceder 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+devuelve el valor asociado a un nombre, es decir el teléfono 
+.RE
+.PP
+
+.SS "\fBGuia_Tlf\fP Guia_Tlf::operator^ (const \fBGuia_Tlf\fP & g)\fC [inline]\fP"
+
+.PP
+Intersección de guías de teléfonos\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIg\fP guia a restar 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+: una nueva guia resultado de la intersección del objeto al que apunta this y g 
+.RE
+.PP
+
+.PP
+Hace referencia a insert()\&.
+.SS "\fBGuia_Tlf\fP Guia_Tlf::previos (const string & nombre)\fC [inline]\fP"
+
+.PP
+Obtiene una guia con los nombre previos a uno dado\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fInombre\fP nombre delimitador 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+nueva guia sin nombres mayores que \fInombre\fP 
+.RE
+.PP
+
+.PP
+Hace referencia a insert()\&.
+.SS "int Guia_Tlf::size () const\fC [inline]\fP"
+
+.PP
+Numero de telefonos\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+el numero de telefonos asociados 
+.RE
+.PP
+
+.SH "Documentación de las funciones relacionadas y clases amigas"
+.PP 
+.SS "ostream& operator<< (ostream & os, \fBGuia_Tlf\fP & g)\fC [friend]\fP"
+
+.PP
+Escritura de la guia de telefonos\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIos\fP flujo de salida\&. Es MODIFICADO 
+.br
+\fIg\fP guia de telefonos que se escribe 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+el flujo de salida 
+.RE
+.PP
+
+.SS "istream& operator>> (istream & is, \fBGuia_Tlf\fP & g)\fC [friend]\fP"
+
+.PP
+Lectura de la guia de telefonos\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIis\fP flujo de entrada\&. ES MODIFICADO 
+.br
+\fIg\fP guia de telefonos\&. ES MODIFICADO 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+el flujo de entrada 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para guiatlf del código fuente\&.

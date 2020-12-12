@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structdata" kind="struct" language="C++" prot="public">
+    <compoundname>data</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>U</declname>
+        <defname>U</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdata_1aa3298b9b021e026f8663005d2fc19e1a" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T data&lt; T, U &gt;::clave</definition>
+        <argsstring></argsstring>
+        <name>clave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="20" column="1" bodyfile="include/diccionario.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata_1a8299bf6975cfaffbb2354a65881e16a2" prot="public" static="no" mutable="no">
+        <type>list&lt; U &gt;</type>
+        <definition>list&lt;U&gt; data&lt; T, U &gt;::info_asoci</definition>
+        <argsstring></argsstring>
+        <name>info_asoci</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/diccionario.h" line="21" column="1" bodyfile="include/diccionario.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/diccionario.h" line="19" column="1" bodyfile="include/diccionario.h" bodystart="19" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structdata_1aa3298b9b021e026f8663005d2fc19e1a" prot="public" virt="non-virtual"><scope>data</scope><name>clave</name></member>
+      <member refid="structdata_1a8299bf6975cfaffbb2354a65881e16a2" prot="public" virt="non-virtual"><scope>data</scope><name>info_asoci</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

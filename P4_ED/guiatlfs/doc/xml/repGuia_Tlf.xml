@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="repGuia_Tlf" kind="page">
+    <compoundname>repGuia_Tlf</compoundname>
+    <title>Rep del TDA Guia_Tlf</title>
+    <detaileddescription>
+<sect1 id="repGuia_Tlf_1invGuia_Tlf">
+<title>Invariante de la representación</title>
+<para>El invariante es <emphasis>para</emphasis> todo <emphasis>i</emphasis> y <emphasis>j</emphasis> tal que i&lt;j entonces <emphasis>e1i</emphasis> y e1j son distintos</para></sect1>
+<sect1 id="repGuia_Tlf_1faGuia_Tlf">
+<title>Función de abstracción</title>
+<para>Un objeto válido <emphasis>rep</emphasis> del TDA <ref refid="classGuia__Tlf" kindref="compound">Guia_Tlf</ref> representa al valor</para><para>{(rep.begin().first,rep.begin().second),(rep.begin()+1.first,rep.begin()+1.second),....,(rep.begin()+n-1.first,rep.begin()+n-1.second)} </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

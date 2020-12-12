@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classGuia__Tlf_1_1const__iterator" kind="class"><name>Guia_Tlf::const_iterator</name>
+    <member refid="classGuia__Tlf_1_1const__iterator_1afdf5142b4e26f75f281e7a8c40a25d11" kind="variable"><name>it</name></member>
+    <member refid="classGuia__Tlf_1_1const__iterator_1aabad8af74917d908a23aae914becbd37" kind="variable"><name>final</name></member>
+    <member refid="classGuia__Tlf_1_1const__iterator_1a4349d7a1b26a0aa94447235f95b2f940" kind="friend"><name>Guia_Tlf</name></member>
+    <member refid="classGuia__Tlf_1_1const__iterator_1adeb2b592fd9f66095d4586555758b05d" kind="function"><name>operator++</name></member>
+    <member refid="classGuia__Tlf_1_1const__iterator_1a66384372c565c771758da1e973f9dffd" kind="function"><name>operator--</name></member>
+    <member refid="classGuia__Tlf_1_1const__iterator_1a569a65eba553adde3768930ffa4e4e3c" kind="function"><name>operator*</name></member>
+    <member refid="classGuia__Tlf_1_1const__iterator_1af2c948674f4516d534e37535cc874a78" kind="function"><name>operator==</name></member>
+    <member refid="classGuia__Tlf_1_1const__iterator_1afdbd3cd0cb596196c6002b4b9b672453" kind="function"><name>operator!=</name></member>
+    <member refid="classGuia__Tlf_1_1const__iterator_1a60509fbd78a2dddcaaba8477c27da93f" kind="function"><name>operator=</name></member>
+    <member refid="classGuia__Tlf_1_1const__iterator_1aea36607af57cbf11184b178cdc6c7ae9" kind="function"><name>operator+</name></member>
+  </compound>
+  <compound refid="classGuia__Tlf" kind="class"><name>Guia_Tlf</name>
+    <member refid="classGuia__Tlf_1ad53814dae53b4f64ed7152c21477cade" kind="variable"><name>datos</name></member>
+    <member refid="classGuia__Tlf_1a2959772b25b0871e27889d02a6a917c7" kind="function"><name>operator[]</name></member>
+    <member refid="classGuia__Tlf_1a10662395b20eed0d83ec9119f684e17f" kind="function"><name>gettelefono</name></member>
+    <member refid="classGuia__Tlf_1ae55a42b80111e9bf9bb051514fbe6d6f" kind="function"><name>insert</name></member>
+    <member refid="classGuia__Tlf_1aa2893a511b0adb23ff8fe95162fa186d" kind="function"><name>insert</name></member>
+    <member refid="classGuia__Tlf_1a07860c300a55d62ca00a680668297752" kind="function"><name>insert</name></member>
+    <member refid="classGuia__Tlf_1a57e32bbc9e76567d22e5275d4d2a6515" kind="function"><name>borrar</name></member>
+    <member refid="classGuia__Tlf_1af8adac24fd35985b9016a4a38cca60f4" kind="function"><name>borrar</name></member>
+    <member refid="classGuia__Tlf_1a081c98f65dce5a08a2e032446b6c4931" kind="function"><name>size</name></member>
+    <member refid="classGuia__Tlf_1aa63213524c6339ea89baae2b5d2ebb69" kind="function"><name>contabiliza</name></member>
+    <member refid="classGuia__Tlf_1a36ac970ece51a62763bb3898159d0047" kind="function"><name>clear</name></member>
+    <member refid="classGuia__Tlf_1a3e0b08a1985d3c72853690730319172f" kind="function"><name>operator+</name></member>
+    <member refid="classGuia__Tlf_1ac381d53f275ce769830e07fbc56902b0" kind="function"><name>operator-</name></member>
+    <member refid="classGuia__Tlf_1ac709b1fb7e2c04f58f660fefab6b5a3d" kind="function"><name>operator^</name></member>
+    <member refid="classGuia__Tlf_1a87f4cbea4ba03c3a70178bb5358cda51" kind="function"><name>previos</name></member>
+    <member refid="classGuia__Tlf_1a0a0f50f45b96349e005d7457a0c05574" kind="function"><name>begin</name></member>
+    <member refid="classGuia__Tlf_1a91777ba1c5e206259943af1eae5aa305" kind="function"><name>end</name></member>
+    <member refid="classGuia__Tlf_1a234fca5546ac8077214ac7a2f462850a" kind="function"><name>begin</name></member>
+    <member refid="classGuia__Tlf_1a7f87e18af3b8a7d7b542342c0318c33e" kind="function"><name>end</name></member>
+    <member refid="classGuia__Tlf_1a73eb02557f3118999710c66aa9ecf309" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classGuia__Tlf_1ac15a5b0c2eb7d5b1843f11beb492495e" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="classGuia__Tlf_1_1iterator" kind="class"><name>Guia_Tlf::iterator</name>
+    <member refid="classGuia__Tlf_1_1iterator_1a00152bb5a4241a7d251859016b071b53" kind="variable"><name>it</name></member>
+    <member refid="classGuia__Tlf_1_1iterator_1ac72812dfe3d66ec0224e5fa0cca764f7" kind="variable"><name>final</name></member>
+    <member refid="classGuia__Tlf_1_1iterator_1a4349d7a1b26a0aa94447235f95b2f940" kind="friend"><name>Guia_Tlf</name></member>
+    <member refid="classGuia__Tlf_1_1iterator_1a4edb22003e51ce05bb2be0e0f0f9334d" kind="function"><name>operator++</name></member>
+    <member refid="classGuia__Tlf_1_1iterator_1a40654c62e5d7fa0c88f41cc8248cba44" kind="function"><name>operator--</name></member>
+    <member refid="classGuia__Tlf_1_1iterator_1ac0f46a9c675378d6e9c41abffcc9b355" kind="function"><name>operator*</name></member>
+    <member refid="classGuia__Tlf_1_1iterator_1ab4b046aff7151ba197b789091b65aa49" kind="function"><name>operator==</name></member>
+    <member refid="classGuia__Tlf_1_1iterator_1aa7f7981ca6aec075d47618b136904682" kind="function"><name>operator!=</name></member>
+    <member refid="classGuia__Tlf_1_1iterator_1a5fb15345776270604fbcb3e4f71407b7" kind="function"><name>operator=</name></member>
+    <member refid="classGuia__Tlf_1_1iterator_1afaecefee259ceba5f30ab7b838de84a6" kind="function"><name>operator+</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="guiatlf_8h" kind="file"><name>guiatlf.h</name>
+    <member refid="guiatlf_8h_1a865bcc9ad026d2cfa52f7797f293eac7" kind="function"><name>operator&gt;&gt;</name></member>
+    <member refid="guiatlf_8h_1ad2fd87fb961479a112fd2e9afc499c43" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="usoguia_8cpp" kind="file"><name>usoguia.cpp</name>
+    <member refid="usoguia_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="repGuia_Tlf" kind="page"><name>repGuia_Tlf</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>
